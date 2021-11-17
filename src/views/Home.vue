@@ -124,7 +124,7 @@
                     <p class="text-light text-center">An open-world RPG adventure game built on the Ethereum Blockchain. Journey across a vast and varied landscape on your quest to hunt and capture deity-like creatures called Illuvials. Discover the cause of the cataclysm that shattered this land.</p>
                 </div>
                 <div class="d-flex justify-content-center pb-5">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" :style="{height: '382px', width: '710px'}">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" :style="{width: '100%'}">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -132,13 +132,13 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../../public/images/330474.jpg" class="d-block" alt="First Image" :style="{height: '382px', width: '710px'}">
+                                <img src="../../public/images/330474.jpg" class="d-block" alt="First Image" :style="{width: '100%'}">
                             </div>
                             <div class="carousel-item">
-                                <img src="../../public/images/330481.jpg" class="d-block" alt="Second Image" :style="{height: '382px', width: '710px'}">
+                                <img src="../../public/images/330481.jpg" class="d-block" alt="Second Image" :style="{width: '100%'}">
                             </div>
                             <div class="carousel-item">
-                                <img src="../../public/images/330495.png" class="d-block" alt="Third Image" :style="{height: '382px', width: '710px'}">
+                                <img src="../../public/images/330495.png" class="d-block" alt="Third Image" :style="{width: '100%'}">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
