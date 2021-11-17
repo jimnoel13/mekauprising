@@ -87,7 +87,7 @@
                 <h1 class="text-sofia text-light" :style="{'text-align': 'left'}">Mekas</h1>
                 <p class="text-sofia text-light pt-3" :style="{'text-align': 'left'}">In an attempt to create weapons with the least amount of biohazard, they turned to experimenting on animals. After years of genetic engineering, they managed to create Mekas - abominations that are half flesh, half metal. The Mekas were the driving force of the battle for land and power among the nations. Of course, that was before the Chimeras appeared.<br>There are 5 types of Mekas in total, each belonging to a nation and best suited for its home terrain.</p>
                 <div 
-                    class="card bg-dark text-white w-100" 
+                    class="card bg-dark text-white mb-3 w-100" 
                     style="width: 18rem;"
                     v-for="meka in mekas"
                     :key="meka.id"
