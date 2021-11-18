@@ -25,7 +25,7 @@ export default {
         {property: 'og:type', content: 'article'},
         {property: 'og:title', content: 'Meka Uprising - COLLECTIBLE NFTs'},
         {property: 'og:description', content: ''},
-        {property: 'og:image', content: '/assets/logo.png'}
+        {property: 'og:image', content: '../public/images/meka-lg-logo.png'}
       ]
     }
   }
