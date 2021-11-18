@@ -15,19 +15,6 @@ export default {
   components: {
     navbar,
     sign
-  },
-  metaInfo() {
-    return {
-      title: 'Meka Uprising - COLLECTIBLE NFTs',
-      meta: [
-        {name: 'description', content: ''},
-        {property: 'og:url', content: 'http://dev.mekauprising.com'},
-        {property: 'og:type', content: 'article'},
-        {property: 'og:title', content: 'Meka Uprising - COLLECTIBLE NFTs'},
-        {property: 'og:description', content: ''},
-        {property: 'og:image', content: '../public/images/meka-lg-logo.png'}
-      ]
-    }
   }
 }
 </script>
