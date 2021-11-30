@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueMeta from 'vue-meta'
 import App from './App.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import dotenv from 'dotenv'
 
 // import MoralisFactory from './moralis'
 import Moralis from 'moralis'
