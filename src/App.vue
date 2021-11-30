@@ -2,20 +2,34 @@
   <div id="app">
     <navbar/>
     <router-view/>
-    <sign/>
+    <foot/>
   </div>
 </template>
 
 <script>
 import navbar from './components/section/navbar.vue'
-import sign from './components/section/footer.vue'
+import foot from './components/section/footer.vue'
 
 export default {
   name: 'App',
   components: {
     navbar,
-    sign
-  }
+    foot
+  },
+  metaInfo() {
+        return { 
+            title: "Meka Uprising - COLLECTIBLE NFTs",
+            meta: [
+                { name: 'description', content:  'Epiloge is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work.'},
+                { property: 'og:title', content: "Meka Uprising - COLLECTIBLE NFTs"},
+                { property: 'og:url', content: 'http://localhost:8080/'},
+                { property: 'og:type', content: 'website'},    
+                { property: 'og:image', content: '../public/images/meka-lg-logo.png'},    
+                { name: 'robots', content: 'index,follow'} 
+            ]
+        }
+    }
+
 }
 </script>
 
