@@ -139,7 +139,7 @@ export default {
     },
     async loginUser() {
       try {
-        let response = await this.$http.post(process.env.API_URL+"/user/login", this.login);
+        let response = await this.$http.post(process.env.VUE_APP_API_URL+"/user/login", this.login);
         let token = response.data.token;
         localStorage.setItem("jwt", token);
         if (token) {
