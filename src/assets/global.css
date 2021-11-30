@@ -10,7 +10,7 @@
 }
 
 .button-solid{
-    background: linear-gradient(76.91deg, rgb(76, 232, 190) -125.56%, rgb(133, 67, 194) 116.11%);
+    background: linear-gradient(76.91deg, #706d71 -125.56%, #00abdf 116.11%);
     color: white;
     border: none;
     font-family: 'Sofia Pro', sans-serif;
@@ -18,16 +18,15 @@
 
 .button-shadow:hover{
     transition: all 0.5s ease;
-    letter-spacing: 2px;
-    box-shadow: 3px 3px rgb(76, 232, 190), -3px -3px rgb(133, 67, 194);
+    box-shadow: -3px 3px #706d71, 3px -3px #ef7b06;
 }
 
 .shadow-1{
-    box-shadow: 3px 3px white, -3px -3px rgb(133, 67, 194);
+    box-shadow: 3px 3px white, -3px -3px #ef7b06;
 }
 
 .shadow-2{
-    box-shadow: -3px -3px white, 3px 3px rgb(76, 232, 190);
+    box-shadow: -3px -3px white, 3px 3px #84bc2d;
 }
 
 .div-row{
@@ -47,12 +46,12 @@
     width: 40% !important;
 }
 
-.bg-181539{
-    background-color: #181539;
+.bg-706d71{
+    background-color: #706d71;
 }
 
-.bg-110F24{
-    background-color: #110F24;
+.bg-252525{
+    background-color: #252525;
 }
 
 .bg-default{
@@ -61,4 +60,26 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+a.normallink {
+    color: blue;
+    text-decoration: none;
+}
+
+a.normallink:hover{
+    text-decoration: underline;   
+}
+
+/* Overwrite */
+button{
+    border-radius: 0 !important;
+}
+
+input{
+    border-radius: 0 !important;
+}
+
+.modal-content{
+    border-radius: 0 !important;
 }

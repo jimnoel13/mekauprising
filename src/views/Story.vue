@@ -139,7 +139,7 @@ export default {
 
 <style scoped>
     .landing-page-story{
-        background: url('https://www.illuvium.io/images/backgrounds/1440x900.jpg');
+        background: url('../../public/images/mu-banner-bg7.png');
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
