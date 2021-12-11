@@ -116,13 +116,93 @@
             </div>
 
             <div class="game-roadmap">
-                <div class="bg"></div>
+                <div class="bg">
+                    <div class="position-relative">
+                        <div class="line-bg1"></div>
+                        <div class="line-bg2"></div>
+                        <div class="line-bg3"></div>
+                        <div class="line-bg4"></div>
+                        <div class="line-bg5"></div>
+                    </div>
+                </div>
                 <div class="content pt-5">
                     <div class="container pt-5">
                         <h1 class="title text-light text-center">Roadmap</h1>
                         <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
-                        <br>
-                        <img src="../../public/images/roadmap.png" :style="{width: '1100px', display: 'block', 'margin': 'auto'}">
+                        <div class="roadmap-content">
+                            
+                            <div class="position-absolute phase1">
+                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 1</span>
+                                </p>
+                                <ul>
+                                    <li>Conceptualization of Project</li>
+                                    <li>Define Game Mechanics</li>
+                                    <li>Meka Designs</li>
+                                    <li>Website Launch</li>
+                                    <li>Litepaper Release</li>
+                                    <li>Community Contests & Giveaways</li>
+                                    <li>Game Demo</li>
+                                    <li>Social Media Ads</li>
+                                    <li>Social Media Influencers</li>
+                                    <li>Press Release Articles</li>
+                                </ul>
+                            </div>
+
+                            <div class="position-absolute phase2">
+                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 2</span>
+                                </p>
+                                <ul>
+                                    <li>Release the Team</li>
+                                    <li>Token Staking</li>
+                                    <li>Marketplace Partnership</li>
+                                    <li>Guild Hall Presale</li>
+                                    <li>Smart Contract Audits</li>
+                                    <li>Meka Uprising Marketplace</li>
+                                    <li>NFT Staking Mechanism</li>
+                                    <li>Genesis Meka Early Assembly (Breeding)</li>
+                                    <li>Genesis Meka Beta Gameplay Access</li>
+                                    <li>Public Beta</li>
+                                    <li>Release of Merch</li>
+                                </ul>
+                            </div>
+
+                            <div class="position-absolute phase3">
+                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 3</span>
+                                </p>
+                                <ul>
+                                    <li>Conceptualization of Project</li>
+                                    <li>Define Game Mechanics</li>
+                                    <li>Meka Designs</li>
+                                    <li>Website Launch</li>
+                                    <li>Litepaper Release</li>
+                                    <li>Community Contests & Giveaways</li>
+                                    <li>Game Demo</li>
+                                    <li>Social Media Ads</li>
+                                    <li>Social Media Influencers</li>
+                                    <li>Press Release Articles</li>
+                                </ul>
+                            </div>
+
+                            <div class="position-absolute phase4">
+                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 4</span>
+                                </p>
+                                <ul>
+                                    <li>NFT Staking Release</li>
+                                    <li>$secondarytoken Launch</li>
+                                    <li>Mobile App Launch</li>
+                                    <li>DAO Establishment</li>
+                                    <li>Addition of New Game Modes</li>
+                                    <li>Release of Guilds</li>
+                                    <li>Release of In-game Scholarshipsles</li>
+                                </ul>
+                            </div>
+                            
+                            <img src="../../public/images/progress-roadmap.png" class="progressbar">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,6 +230,7 @@
 </script>
 
 <style scoped>
+
 .title{
     font-family: 'Sofia Pro', sans-serif;
     font-size: 40px;
@@ -280,11 +361,119 @@
     left: -50px;
     transform: rotate(-2deg);
     z-index: 0;
+    overflow: hidden;
+}
+
+.game-roadmap .bg .line-bg1{
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    background-color: #303030;
+    top: -120px;
+    left: 18%;
+    transform: rotate(-40deg);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.game-roadmap .bg .line-bg2{
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    background-color: #303030;
+    top: -120px;
+    left: 5%;
+    transform: rotate(-40deg);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.game-roadmap .bg .line-bg3{
+    position: absolute;
+    width: 20px;
+    height: 550px;
+    background-color: #303030;
+    top: 350px;
+    left: 15%;
+    transform: rotate(-40deg);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.game-roadmap .bg .line-bg4{
+    position: absolute;
+    width: 20px;
+    height: 500px;
+    background-color: #303030;
+    top: 450px;
+    left: 5%;
+    transform: rotate(-40deg);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.game-roadmap .bg .line-bg5{
+    position: absolute;
+    width: 20px;
+    height: 400px;
+    background-color: #303030;
+    top: 400px;
+    left: 40%;
+    transform: rotate(-40deg);
+    z-index: 1;
+    border-radius: 20px;
 }
 
 .game-roadmap .content{
     z-index: 2;
     position: relative;
+}
+
+.game-roadmap .roadmap-content{
+    height: 1000px;
+    width: 100%;
+}
+
+.game-roadmap .roadmap-content .phase1{
+    top: 20%;
+    left: 20%;
+}
+
+.game-roadmap .roadmap-content .phase2{
+    top: 63%;
+    left: 35%;
+}
+
+.game-roadmap .roadmap-content .phase3{
+    top: 20%;
+    right: 35%;
+}
+
+.game-roadmap .roadmap-content .phase4{
+    top: 63%;
+    right: 20%;
+}
+
+.game-roadmap .roadmap-content ul{
+    list-style-type: none;
+    padding: 10px 0 0 10px;
+}
+
+.game-roadmap .roadmap-content ul li{
+    color: white;
+    font-size: 12px;
+}
+
+.game-roadmap .roadmap-content ul li:before{
+    content: '- ';
+}
+
+.game-roadmap .progressbar{
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bg-4 div h1.title{
