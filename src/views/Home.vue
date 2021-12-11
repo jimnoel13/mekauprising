@@ -112,7 +112,7 @@
             </div>
             
             <div class="game-players">
-
+                <img src="../../public/images/player.png" :style="{display: 'block', 'margin': 'auto', width: '1000px'}">
             </div>
 
             <div class="game-roadmap">
@@ -121,14 +121,18 @@
                     <div class="container pt-5">
                         <h1 class="title text-light text-center">Roadmap</h1>
                         <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                        <br>
+                        <img src="../../public/images/roadmap.png" :style="{width: '1100px', display: 'block', 'margin': 'auto'}">
                     </div>
                 </div>
             </div>
 
             <div class="game-integration">
-                <div class="container">
+                <div class="container pb-5">
                     <h1 class="title text-light text-center">Tech Integrations</h1>
                     <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                    <br>
+                    <img src="../../public/images/integration.png" :style="{width: '1000px', display: 'block', 'margin': 'auto'}">
                 </div>
             </div>
 
@@ -258,19 +262,19 @@
 }
 
 .game-players{
-    height: 1000px;
+    height: 600px;
 }
 
 .game-roadmap{
     position: relative;
     overflow: hidden;
-    height: 1000px;
+    height: 1100px;
 }
 
 .game-roadmap .bg{
     position: absolute;
     width: 250%;
-    height: 900px;
+    height: 1000px;
     background-color: #171617;
     top: 0;
     left: -50px;

@@ -25,14 +25,14 @@ import 'aos/dist/aos.css'
 /* Font Awesome */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faDiscord, faTwitter, faYoutube, faMedium, faTelegram, faGoogle, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faUserSecret, faGamepad, faPlayCircle, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faGamepad, faPlayCircle, faUser, faGlobe, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* API */
 import axios from "axios";
 
 
-library.add(faUserSecret,faGamepad,faPlayCircle,faDiscord,faTwitter,faYoutube,faMedium,faTelegram,faUser,faGoogle,faFacebook)
+library.add(faUserSecret,faGamepad,faPlayCircle,faDiscord,faTwitter,faYoutube,faMedium,faTelegram,faUser,faGoogle,faFacebook,faGlobe,faEnvelope)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)

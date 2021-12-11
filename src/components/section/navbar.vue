@@ -1,6 +1,6 @@
 <template>
   <div :style="{position: 'relative'}">
-    <b-navbar toggleable="lg" class="position-absolute text-light" :style="{top: '0', left: '0', width: '100%', 'z-index': '8', padding: '10px 120px'}">
+    <b-navbar toggleable="lg" class="position-absolute text-light nav-responsive" :style="{top: '0', left: '0', width: '100%', 'z-index': '8'}">
       <b-navbar-brand href="#"><img src="../../../public/images/nav-logo.png" :style="{height: '90px', width: '120px'}"></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -178,6 +178,10 @@ export default {
 </script>
 
 <style scoped>
+  .nav-responsive{
+    padding: 10px 120px;
+  }
+
   .navbar .navbar-nav .tab-button{
     padding: 10px 15px;
     color: white;
@@ -276,15 +280,19 @@ export default {
 
   }
 
-  @media only screen and (min-width: 960px) {
-    .navbar .navbar-nav .tabs .nav-link {
-      padding: 1em 0.7em;
+  @media only screen and (max-width: 600px) {
+    .nav-responsive{
+      padding: 10px 20px;
     }
-    .navbar {
-      padding: 0;
+
+    #nav-collapse{
+      background: #757575;
+      opacity: 0.5;
     }
-    .navbar .navbar-brand {
-      padding: 0 0.7em;
+
+    .navbar .navbar-nav .tabs{
+      opacity: 1 !important;
     }
   }
+
 </style>

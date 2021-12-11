@@ -43,6 +43,10 @@ html, body{
     font-family: 'Sofia Pro', sans-serif;
 }
 
+.sofia{
+    font-family: 'Sofia Pro', sans-serif;
+}
+
 .button-shadow:hover{
     transition: all 0.5s ease;
     box-shadow: -3px 3px #706d71, 3px -3px #ef7b06;
