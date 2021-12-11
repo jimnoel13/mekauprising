@@ -1,5 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
+html, body{
+    background: #222222;
+    font-family: 'Sofia Pro', sans-serif;
+}
+
 .text-sofia{
 	font-family: 'Sofia Pro', sans-serif;
 }
@@ -7,6 +12,28 @@
 .button-shadow{
     transition: all 0.5s ease-out;
     z-index: 2;
+}
+
+.button-orange{
+    transition: all 0.3s ease-out;
+    background: linear-gradient(#c88405, #af4105);
+    font-family: 'Sofia Pro', sans-serif;
+    color: white;
+    padding: 15px 25px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border: none;
+}
+
+.button-orange:hover{
+    transition: all 0.3s ease;
+    box-shadow: -4px 4px 5px -3px rgba(0,0,0,0.58);
+    -webkit-box-shadow: -4px 4px 5px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: -4px 4px 5px -3px rgba(0,0,0,0.58);
 }
 
 .button-solid{

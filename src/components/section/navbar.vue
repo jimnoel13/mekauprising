@@ -1,16 +1,18 @@
 <template>
-  <div>
-    <b-navbar toggleable="lg" type="dark" variant="info" class="ps-4 pe-4 bg-dark text-light">
-      <b-navbar-brand href="#"><img src="../../../public/images/meka-lg-logo.png" :style="{height: '40px', width: '120px'}"></b-navbar-brand>
+  <div :style="{position: 'relative'}">
+    <b-navbar toggleable="lg" class="position-absolute text-light" :style="{top: '0', left: '0', width: '100%', 'z-index': '8', padding: '10px 120px'}">
+      <b-navbar-brand href="#"><img src="../../../public/images/nav-logo.png" :style="{height: '90px', width: '120px'}"></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
 
         <b-navbar-nav class="ml-auto ms-auto text-center">
-          <b-nav-item class="tabs"><router-link to="/">Home</router-link></b-nav-item>
-          <b-nav-item class="tabs" href="/#about">About</b-nav-item>
-          <b-nav-item class="tabs"><router-link to="/story">Story</router-link></b-nav-item>
+          <b-nav-item class="tabs"><router-link to="/">Meka Uprising</router-link></b-nav-item>
+          <b-nav-item class="tabs" href="/#about">Our Vision</b-nav-item>
+          <b-nav-item class="tabs"><router-link to="/story">Game Features</router-link></b-nav-item>
+          <b-nav-item class="tabs"><router-link to="/story">Contact</router-link></b-nav-item>
+          <b-nav-item ><button @click="moralisLogin" class="button-orange">Connect Wallet</button></b-nav-item>
 
           <!-- Moralis -->
           <b-nav-item v-if="userToken">
@@ -24,7 +26,7 @@
             </button>
           </b-nav-item>
 
-          <b-nav-item v-if="!userToken"><button v-b-modal.login class="tab-button button-shadow"><font-awesome-icon icon="user"/> Login</button></b-nav-item>
+          <b-nav-item v-if="!userToken" class="d-none"><button v-b-modal.login class="tab-button button-shadow"><font-awesome-icon icon="user"/> Login</button></b-nav-item>
           <div class="dropdown position-relative pt-2" v-if="userToken">
             <button class="btn btn-secondary dropdown-toggle button-shadow" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="../../../public/images/30743827_2181451222084516_4517157275755872256_n.jpg" class="profile-button"> {{ user.name.split(' ')[0] }}
@@ -183,16 +185,22 @@ export default {
     background: transparent;
     font-family: 'Sofia Pro', sans-serif;
     text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1px;
+    font-size: 0.8em;
     margin-top: 2px;
   }
 
+  .navbar .navbar-nav .tabs{
+    padding: 0 1em;
+  }
+
   .navbar .navbar-nav .tabs .nav-link {
-    font-size: 1.1em;
+    font-size: 0.8em;
+    font-weight: bold;
     position: relative;
     color: white;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Sofia Pro', sans-serif;
+    text-transform: uppercase;
+    line-height: 2.9em;
   }
   .navbar .navbar-nav .tabs .nav-link::after {
     position: absolute;
