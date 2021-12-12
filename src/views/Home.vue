@@ -879,7 +879,7 @@
     }
 
     .home-banner {
-        width: 600px;
+        width: 100%;
         height: 500px;
         overflow: hidden;
     }
@@ -889,24 +889,24 @@
     }
 
     .overview{
-        width: 600px;
+        width: 100%;
         overflow: hidden;
     }
 
     .game-players{
         height: 1200px;
-        width: 600px;
+        width: 100%;
         overflow: hidden;
     }
 
     .game-features{
-        width: 600px;
+        width: 100%;
         overflow: hidden;
     }
 
     .game-roadmap{
         height: 1150px;
-        width: 600px;
+        width: 100%;
         overflow: hidden;
     }
 
