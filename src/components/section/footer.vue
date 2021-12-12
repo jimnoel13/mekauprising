@@ -106,7 +106,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        width: 600px;
+        width: 100%;
         height: 835px;
         display: block;
         margin: auto;

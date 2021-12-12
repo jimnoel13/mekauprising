@@ -276,7 +276,7 @@
 
 
         <!-- Mobile View -->
-        <div class="col-sm-12 d-block d-sm-block d-md-none d-lg-none" id="about" :style="{width: '600px', overflow: 'hidden'}">
+        <div class="col-sm-12 d-block d-sm-block d-md-none d-lg-none" id="about" :style="{width: '100%'}">
             <div class="overview pb-0">
                 <div
                 data-aos="fade-up"
@@ -288,7 +288,7 @@
                         <h1 class="title text-light text-center">Game Overview</h1>
                         <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
                         <br>
-                        <img src="../../public/images/overview-img-mobile.png" :style="{height: 'auto', width: '400px', display: 'block', 'margin': 'auto'}">
+                        <img src="../../public/images/overview-img-mobile.png" :style="{height: 'auto', width: '100%', display: 'block', 'margin': 'auto'}">
                         <div class="container">
                             <b-row class="div-row mt-3 mb-5">
                                 <b-col
@@ -602,11 +602,6 @@
 
 <style scoped>
 
-.m-width{
-    width: 600px;
-    overflow: hidden;
-}
-
 .d-width{
     width: 1519px;
     overflow: hidden;
@@ -874,6 +869,11 @@
 
 @media only screen and (max-width: 600px){
     html,body{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .m-width{
         width: 100%;
         overflow: hidden;
     }
