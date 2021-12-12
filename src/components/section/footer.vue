@@ -70,7 +70,7 @@
                     </b-row>
                 </b-container>
             </div>
-            <b-container class="pt-3">
+            <b-container class="pt-3 ">
                 <p class="text-center sofia text-light">&copy; {{ new Date().getFullYear() }}, All rights reserved</p>
             </b-container>    
         </div>

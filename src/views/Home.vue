@@ -1,5 +1,5 @@
 <template>
-    <div :style="{display: 'block', margin: 'auto', width: '1519px'}">
+    <div>
         <div class="home-banner">
             <div class="home-desc">
                 <p :style="{'text-transform': 'uppercase', 'font-size': '40px', 'font-family': 'Sofia Pro', 'line-height': '40px'}" class="text-light">mekauprising offers <br> to earn within our ecosystem.</p>
@@ -276,7 +276,7 @@
 
 
         <!-- Mobile View -->
-        <div class="col-sm-12 d-block d-sm-block d-md-none d-lg-none" id="about">
+        <div class="col-sm-12 d-block d-sm-block d-md-none d-lg-none" id="about" :style="{width: '600px', overflow: 'hidden'}">
             <div class="overview pb-0">
                 <div
                 data-aos="fade-up"
@@ -604,10 +604,13 @@
 
 .m-width{
     width: 600px;
+    overflow: hidden;
 }
 
 .d-width{
     width: 1519px;
+    overflow: hidden;
+    margin: auto;
 }
 
 .title{
@@ -637,12 +640,14 @@
 
 .overview{
     padding: 50px 0;
+    width: 1519px;
 }
 
 .game-features{
     position: relative;
     overflow: hidden;
     height: 2200px;
+    width: 1519px;
 }
 
 .game-features .bg{
@@ -723,9 +728,11 @@
 
 .game-players{
     height: 600px;
+    width: 1519px;
 }
 
 .game-roadmap{
+    width: 1519px;
     position: relative;
     overflow: hidden;
     height: 1100px;
@@ -866,27 +873,47 @@
 }
 
 @media only screen and (max-width: 600px){
+    html,body{
+        width: 600px;
+        overflow: hidden;
+    }
+
     .home-banner {
-        width: 600px; 
+        width: 600px;
         height: 500px;
+        overflow: hidden;
     }
 
     .home-desc{
         padding: 0 20px;
     }
 
+    .overview{
+        width: 600px;
+        overflow: hidden;
+    }
+
     .game-players{
         height: 1200px;
+        width: 600px;
+        overflow: hidden;
+    }
+
+    .game-features{
+        width: 600px;
+        overflow: hidden;
     }
 
     .game-roadmap{
         height: 1150px;
+        width: 600px;
         overflow: hidden;
     }
 
     .game-roadmap .roadmap-content{
         height: 1000px;
         width: 515px;
+        overflow: hidden;
     }
 
     .game-roadmap .bg{
