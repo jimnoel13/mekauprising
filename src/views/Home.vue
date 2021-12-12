@@ -351,7 +351,7 @@
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500"
                                 >
-                                    <img class="d-block" :style="{width: '500px'}" src="../../public/images/coin.png" alt="..." />
+                                    <img class="d-block" :style="{width: '400px'}" src="../../public/images/coin.png" alt="..." />
                                 </b-col>
                                 <b-col 
                                 cols="12"
@@ -374,7 +374,7 @@
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500"
                                 >
-                                    <img class="d-block" :style="{width: '500px'}" src="../../public/images/treasure.png" alt="..." />
+                                    <img class="d-block" :style="{width: '400px', 'margin-left': 'auto'}" src="../../public/images/treasure.png" alt="..." />
                                 </b-col>
                                 <b-col 
                                 cols="12"
@@ -397,7 +397,7 @@
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500"
                                 >
-                                    <img class="d-block" :style="{width: '500px'}" src="../../public/images/snake.png" alt="..." />
+                                    <img class="d-block" :style="{width: '400px'}" src="../../public/images/snake.png" alt="..." />
                                 </b-col>
                                 <b-col
                                 cols="12"

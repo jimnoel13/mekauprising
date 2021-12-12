@@ -302,7 +302,7 @@ export default {
 
     #nav-collapse .bg{
       height: 277px;
-      width: 519px;
+      width: 100%;
       top: 0;
       left: 0;
       position: absolute;
