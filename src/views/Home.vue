@@ -2,7 +2,7 @@
     <div>
         <div class="home-banner">
             <div class="home-desc">
-                <p :style="{'text-transform': 'uppercase', 'font-size': '40px', 'font-family': 'Sofia Pro', 'line-height': '40px'}" class="text-light">mekauprising offers <br> to earn within our ecosystem.</p>
+                <p class="banner-title text-light">mekauprising offers <br> to earn within our ecosystem.</p>
                 <p :style="{'text-transform': 'uppercase', 'font-size': '12px', 'font-family': 'Sofia Pro', 'line-height': '20px'}" class="text-light">a player can choose the path in which they want to earn, the more resources players invest<br> within the ecosystemthe greater their potential rewards are.</p>
                 <button class="button-orange">play to earn</button>
             </div>
@@ -601,6 +601,12 @@
 </script>
 
 <style scoped>
+.banner-title{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Sofia Pro';
+    line-height: 40px;
+}
 
 .d-width{
     width: 1519px;
@@ -871,6 +877,13 @@
     html,body{
         width: 100%;
         overflow: hidden;
+    }
+
+    .banner-title{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Sofia Pro';
+        line-height: 30px;
     }
 
     .m-width{
