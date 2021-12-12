@@ -6,13 +6,13 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-
+        <div class="bg"></div>
         <b-navbar-nav class="ml-auto ms-auto text-center">
           <b-nav-item class="tabs"><router-link to="/">Meka Uprising</router-link></b-nav-item>
           <b-nav-item class="tabs" href="/#about">Our Vision</b-nav-item>
           <b-nav-item class="tabs"><router-link to="/story">Game Features</router-link></b-nav-item>
           <b-nav-item class="tabs"><router-link to="/story">Contact</router-link></b-nav-item>
-          <b-nav-item ><button @click="moralisLogin" class="button-orange">Connect Wallet</button></b-nav-item>
+          <b-nav-item class="button"><button @click="moralisLogin" class="button-orange">Connect Wallet</button></b-nav-item>
 
           <!-- Moralis -->
           <b-nav-item v-if="userToken">
@@ -197,6 +197,10 @@ export default {
     padding: 0 1em;
   }
 
+  .navbar .navbar-nav .button{
+    padding: 0 1em;
+  }
+
   .navbar .navbar-nav .tabs .nav-link {
     font-size: 0.8em;
     font-weight: bold;
@@ -206,6 +210,13 @@ export default {
     text-transform: uppercase;
     line-height: 2.9em;
   }
+
+  .navbar .navbar-nav .button .nav-link {
+    font-size: 0.8em;
+    font-weight: bold;
+    position: relative;
+  }
+
   .navbar .navbar-nav .tabs .nav-link::after {
     position: absolute;
     bottom: 0;
@@ -286,11 +297,25 @@ export default {
     }
 
     #nav-collapse{
-      background: #757575;
-      opacity: 0.5;
+      position: relative;
+    }
+
+    #nav-collapse .bg{
+      height: 277px;
+      width: 519px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 0;
+      background: #353535;
+      opacity: 0.8;
     }
 
     .navbar .navbar-nav .tabs{
+      opacity: 1 !important;
+    }
+
+    .navbar .navbar-nav .button{
       opacity: 1 !important;
     }
   }

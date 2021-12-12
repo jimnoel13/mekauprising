@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :style="{display: 'block', margin: 'auto', width: '1519px'}">
         <div class="home-banner">
             <div class="home-desc">
                 <p :style="{'text-transform': 'uppercase', 'font-size': '40px', 'font-family': 'Sofia Pro', 'line-height': '40px'}" class="text-light">mekauprising offers <br> to earn within our ecosystem.</p>
@@ -8,7 +8,15 @@
             </div>
         </div>
 
-        <!-- About -->
+
+
+
+
+
+
+
+
+
         <!-- Desktop View -->
         <div class="col-md-12 col-lg-12 d-none d-sm none d-md-block d-lg-block" id="about">
             <div class="overview pb-0">
@@ -18,205 +26,568 @@
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="500"
                 >
-                    <div class="container">
+                    <div class="d-width">
                         <h1 class="title text-light text-center">Game Overview</h1>
-                        <img src="../../public/images/overview.png" :style="{height: 'auto', width: '1000px', display: 'block', 'margin': 'auto'}">
-                    </div>
-                </div>
-            </div>
-
-            <div class="game-features">
-                <div class="bg"></div>
-                <div class="line-bg1"></div>
-                <div class="line-bg2"></div>
-                <div class="line-bg3"></div>
-                <div class="line-bg4"></div>
-                <div class="line-bg5"></div>
-                <div class="content pt-5">
-                    <div class="container pt-5">
-                        <h1 class="title text-light text-center">Game Features</h1>
                         <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
-                    </div>
-                    <div class="pt-5">
-                        <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
-                            <b-col 
-                            cols="6"
-                            data-aos="fade-right"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"
-                            data-aos-duration="500"
-                            >
-                                <img class="d-block w-100" src="../../public/images/coin.png" alt="..." />
-                            </b-col>
-                            <b-col 
-                            cols="6"
-                            data-aos="fade-left"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"
-                            data-aos-duration="500"
-                            >
-                                <div class="ps-5 pe-5">
-                                    <h1 class="text-light title">Meka NFT</h1>
-                                    <p class="text-light pt-3 landing-page-sub-desc">TBA The first 8,000 NFTs will become the rarest Meka to exist. These limited edition “Genesis Gunbound” will feature exclusive traits, low ID numbers, ‘seed’ meta tag, and more. Additionally, Genesis NFT owners will receive extra airdrop rewards and will have access to VIP events such as pre-launch “breeding”, beta gameplay, and much more. TOKEN</p>
-                                </div>
-                            </b-col>
-                        </b-row>
-                        <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
-                            <b-col 
-                            cols="6"
-                            data-aos="fade-right"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"
-                            data-aos-duration="500"
-                            >
-                                <div class="ps-5 pe-5">
-                                    <h1 class="text-light title">Meka Token IDO</h1>
-                                    <p class="text-light pt-3 landing-page-sub-desc">TBA We will be holding an IDO community members will be given the chance to “invest” in our game. We believe that small/retail investors are key to having a successful NFT project. Shortly after the IDO, the token will be listed on DEXs, the date and platform is yet to be announced.</p>
-                                </div>
-                            </b-col>
-                            <b-col
-                            cols="6"
-                            data-aos="fade-left"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"
-                            data-aos-duration="500"
-                            >
-                                <img class="d-block w-100" src="../../public/images/treasure.png" alt="..." />
-                            </b-col>
-                        </b-row>
-                        <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
-                            <b-col
-                            cols="6"
-                            data-aos="fade-right"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"
-                            data-aos-duration="500"
-                            >
-                                <img class="d-block w-100" src="../../public/images/snake.png" alt="..." />
-                            </b-col>
-                            <b-col
-                            cols="6"
-                            data-aos="fade-left"
-                            data-aos-offset="300"
-                            data-aos-easing="ease-in-sine"
-                            data-aos-duration="500"
-                            >
-                                <div class="ps-5 pe-5">
-                                    <h1 class="text-light title">Land Sale</h1>
-                                    <p class="text-light pt-3 landing-page-sub-desc">TBA Land plots will be sold to early-bird community members. These NFT properties will include exclusive land items, and other benefits</p>
-                                </div>
-                            </b-col>
-                        </b-row> 
-                    </div>
-                </div>   
-            </div>
-            
-            <div class="game-players">
-                <img src="../../public/images/player.png" :style="{display: 'block', 'margin': 'auto', width: '1000px'}">
-            </div>
-
-            <div class="game-roadmap">
-                <div class="bg">
-                    <div class="position-relative">
-                        <div class="line-bg1"></div>
-                        <div class="line-bg2"></div>
-                        <div class="line-bg3"></div>
-                        <div class="line-bg4"></div>
-                        <div class="line-bg5"></div>
-                    </div>
-                </div>
-                <div class="content pt-5">
-                    <div class="container pt-5">
-                        <h1 class="title text-light text-center">Roadmap</h1>
-                        <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
-                        <div class="roadmap-content">
-                            
-                            <div class="position-absolute phase1">
-                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 1</span>
-                                </p>
-                                <ul>
-                                    <li>Conceptualization of Project</li>
-                                    <li>Define Game Mechanics</li>
-                                    <li>Meka Designs</li>
-                                    <li>Website Launch</li>
-                                    <li>Litepaper Release</li>
-                                    <li>Community Contests & Giveaways</li>
-                                    <li>Game Demo</li>
-                                    <li>Social Media Ads</li>
-                                    <li>Social Media Influencers</li>
-                                    <li>Press Release Articles</li>
-                                </ul>
-                            </div>
-
-                            <div class="position-absolute phase2">
-                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 2</span>
-                                </p>
-                                <ul>
-                                    <li>Release the Team</li>
-                                    <li>Token Staking</li>
-                                    <li>Marketplace Partnership</li>
-                                    <li>Guild Hall Presale</li>
-                                    <li>Smart Contract Audits</li>
-                                    <li>Meka Uprising Marketplace</li>
-                                    <li>NFT Staking Mechanism</li>
-                                    <li>Genesis Meka Early Assembly (Breeding)</li>
-                                    <li>Genesis Meka Beta Gameplay Access</li>
-                                    <li>Public Beta</li>
-                                    <li>Release of Merch</li>
-                                </ul>
-                            </div>
-
-                            <div class="position-absolute phase3">
-                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 3</span>
-                                </p>
-                                <ul>
-                                    <li>Conceptualization of Project</li>
-                                    <li>Define Game Mechanics</li>
-                                    <li>Meka Designs</li>
-                                    <li>Website Launch</li>
-                                    <li>Litepaper Release</li>
-                                    <li>Community Contests & Giveaways</li>
-                                    <li>Game Demo</li>
-                                    <li>Social Media Ads</li>
-                                    <li>Social Media Influencers</li>
-                                    <li>Press Release Articles</li>
-                                </ul>
-                            </div>
-
-                            <div class="position-absolute phase4">
-                                <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                    <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 4</span>
-                                </p>
-                                <ul>
-                                    <li>NFT Staking Release</li>
-                                    <li>$secondarytoken Launch</li>
-                                    <li>Mobile App Launch</li>
-                                    <li>DAO Establishment</li>
-                                    <li>Addition of New Game Modes</li>
-                                    <li>Release of Guilds</li>
-                                    <li>Release of In-game Scholarshipsles</li>
-                                </ul>
-                            </div>
-                            
-                            <img src="../../public/images/progress-roadmap.png" class="progressbar">
+                        <br>
+                        <img src="../../public/images/overview-img.png" :style="{height: 'auto', width: '900px', display: 'block', 'margin': 'auto'}">
+                        <div class="container">
+                            <b-row class="div-row mt-3 mb-5" :style="{'height': '220px'}">
+                                <b-col cols="6" :style="{height: '220px'}">
+                                    <img src="../../public/images/overview-pte.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    <img src="../../public/images/overview-q.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                </b-col>
+                                <b-col cols="6" :style="{height: '220px'}">
+                                    <img src="../../public/images/overview-cl.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    <img src="../../public/images/overview-wb.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                </b-col>
+                            </b-row>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="game-integration">
-                <div class="container pb-5">
-                    <h1 class="title text-light text-center">Tech Integrations</h1>
-                    <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
-                    <br>
-                    <img src="../../public/images/integration.png" :style="{width: '1000px', display: 'block', 'margin': 'auto'}">
+            <div class="d-width">
+                <div class="game-features">
+                    <div class="bg"></div>
+                    <div class="line-bg1"></div>
+                    <div class="line-bg2"></div>
+                    <div class="line-bg3"></div>
+                    <div class="line-bg4"></div>
+                    <div class="line-bg5"></div>
+                    <div class="content pt-5">
+                        <div class="container pt-5">
+                            <h1 class="title text-light text-center">Game Features</h1>
+                            <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                        </div>
+                        <div class="pt-5">
+                            <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
+                                <b-col 
+                                cols="6"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img class="d-block" :style="{width: '747px'}" src="../../public/images/coin.png" alt="..." />
+                                </b-col>
+                                <b-col 
+                                cols="6"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <div class="ps-5 pe-5">
+                                        <h1 class="text-light title">Meka NFT</h1>
+                                        <p class="text-light pt-3 landing-page-sub-desc">TBA The first 8,000 NFTs will become the rarest Meka to exist. These limited edition “Genesis Gunbound” will feature exclusive traits, low ID numbers, ‘seed’ meta tag, and more. Additionally, Genesis NFT owners will receive extra airdrop rewards and will have access to VIP events such as pre-launch “breeding”, beta gameplay, and much more. TOKEN</p>
+                                    </div>
+                                </b-col>
+                            </b-row>
+                            <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
+                                <b-col 
+                                cols="6"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <div class="ps-5 pe-5">
+                                        <h1 class="text-light title">Meka Token IDO</h1>
+                                        <p class="text-light pt-3 landing-page-sub-desc">TBA We will be holding an IDO community members will be given the chance to “invest” in our game. We believe that small/retail investors are key to having a successful NFT project. Shortly after the IDO, the token will be listed on DEXs, the date and platform is yet to be announced.</p>
+                                    </div>
+                                </b-col>
+                                <b-col
+                                cols="6"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img class="d-block" :style="{width: '747px'}" src="../../public/images/treasure.png" alt="..." />
+                                </b-col>
+                            </b-row>
+                            <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
+                                <b-col
+                                cols="6"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img class="d-block" :style="{width: '747px'}" src="../../public/images/snake.png" alt="..." />
+                                </b-col>
+                                <b-col
+                                cols="6"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <div class="ps-5 pe-5">
+                                        <h1 class="text-light title">Land Sale</h1>
+                                        <p class="text-light pt-3 landing-page-sub-desc">TBA Land plots will be sold to early-bird community members. These NFT properties will include exclusive land items, and other benefits</p>
+                                    </div>
+                                </b-col>
+                            </b-row> 
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            
+            <div class="d-width">
+                <div class="game-players">
+                    <img src="../../public/images/player.png" :style="{display: 'block', 'margin': 'auto', width: '1000px'}">
                 </div>
             </div>
 
+            <div class="d-width">
+                <div class="game-roadmap">
+                    <div class="bg">
+                        <div class="position-relative">
+                            <div class="line-bg1"></div>
+                            <div class="line-bg2"></div>
+                            <div class="line-bg3"></div>
+                            <div class="line-bg4"></div>
+                            <div class="line-bg5"></div>
+                        </div>
+                    </div>
+                    <div class="content pt-5">
+                        <div class="container pt-5">
+                            <h1 class="title text-light text-center">Roadmap</h1>
+                            <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                            <div class="roadmap-content">
+                                
+                                <div 
+                                class="position-absolute phase1"
+                                data-aos="fade-down"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 1</span>
+                                    </p>
+                                    <ul>
+                                        <li>Conceptualization of Project</li>
+                                        <li>Define Game Mechanics</li>
+                                        <li>Meka Designs</li>
+                                        <li>Website Launch</li>
+                                        <li>Litepaper Release</li>
+                                        <li>Community Contests & Giveaways</li>
+                                        <li>Game Demo</li>
+                                        <li>Social Media Ads</li>
+                                        <li>Social Media Influencers</li>
+                                        <li>Press Release Articles</li>
+                                    </ul>
+                                </div>
+
+                                <div 
+                                class="position-absolute phase2"
+                                data-aos="fade-up"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 2</span>
+                                    </p>
+                                    <ul>
+                                        <li>Release the Team</li>
+                                        <li>Token Staking</li>
+                                        <li>Marketplace Partnership</li>
+                                        <li>Guild Hall Presale</li>
+                                        <li>Smart Contract Audits</li>
+                                        <li>Meka Uprising Marketplace</li>
+                                        <li>NFT Staking Mechanism</li>
+                                        <li>Genesis Meka Early Assembly (Breeding)</li>
+                                        <li>Genesis Meka Beta Gameplay Access</li>
+                                        <li>Public Beta</li>
+                                        <li>Release of Merch</li>
+                                    </ul>
+                                </div>
+
+                                <div 
+                                class="position-absolute phase3"
+                                data-aos="fade-down"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 3</span>
+                                    </p>
+                                    <ul>
+                                        <li>Conceptualization of Project</li>
+                                        <li>Define Game Mechanics</li>
+                                        <li>Meka Designs</li>
+                                        <li>Website Launch</li>
+                                        <li>Litepaper Release</li>
+                                        <li>Community Contests & Giveaways</li>
+                                        <li>Game Demo</li>
+                                        <li>Social Media Ads</li>
+                                        <li>Social Media Influencers</li>
+                                        <li>Press Release Articles</li>
+                                    </ul>
+                                </div>
+
+                                <div 
+                                class="position-absolute phase4"
+                                data-aos="fade-up"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 4</span>
+                                    </p>
+                                    <ul>
+                                        <li>NFT Staking Release</li>
+                                        <li>$secondarytoken Launch</li>
+                                        <li>Mobile App Launch</li>
+                                        <li>DAO Establishment</li>
+                                        <li>Addition of New Game Modes</li>
+                                        <li>Release of Guilds</li>
+                                        <li>Release of In-game Scholarshipsles</li>
+                                    </ul>
+                                </div>
+                                
+                                <img src="../../public/images/progress-roadmap.png" class="progressbar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-width">
+                <div class="game-integration">
+                    <div class="container pb-5">
+                        <h1 class="title text-light text-center">Tech Integrations</h1>
+                        <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                        <br>
+                        <img src="../../public/images/integration.png" :style="{width: '1000px', display: 'block', 'margin': 'auto'}">
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+        <!-- Mobile View -->
+        <div class="col-sm-12 d-block d-sm-block d-md-none d-lg-none" id="about">
+            <div class="overview pb-0">
+                <div
+                data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+                >
+                    <div class="m-width">
+                        <h1 class="title text-light text-center">Game Overview</h1>
+                        <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                        <br>
+                        <img src="../../public/images/overview-img-mobile.png" :style="{height: 'auto', width: '400px', display: 'block', 'margin': 'auto'}">
+                        <div class="container">
+                            <b-row class="div-row mt-3 mb-5">
+                                <b-col
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img src="../../public/images/overview-pte.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                </b-col>
+                                <b-col
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img src="../../public/images/overview-q.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                </b-col>
+                                <b-col
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img src="../../public/images/overview-cl.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                </b-col>
+                                <b-col
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img src="../../public/images/overview-wb.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                </b-col>
+                            </b-row>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-width">
+                <div class="game-features">
+                    <div class="bg"></div>
+                    <div class="line-bg1"></div>
+                    <div class="line-bg2"></div>
+                    <div class="line-bg3"></div>
+                    <div class="line-bg4"></div>
+                    <div class="line-bg5"></div>
+                    <div class="content pt-5">
+                        <div class="container pt-5">
+                            <h1 class="title text-light text-center">Game Features</h1>
+                            <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                        </div>
+                        <div class="pt-5">
+                            <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
+                                <b-col 
+                                cols="12"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img class="d-block" :style="{width: '500px'}" src="../../public/images/coin.png" alt="..." />
+                                </b-col>
+                                <b-col 
+                                cols="12"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <div class="ps-5 pe-5">
+                                        <h1 class="text-light title">Meka NFT</h1>
+                                        <p class="text-light pt-3 landing-page-sub-desc">TBA The first 8,000 NFTs will become the rarest Meka to exist. These limited edition “Genesis Gunbound” will feature exclusive traits, low ID numbers, ‘seed’ meta tag, and more. Additionally, Genesis NFT owners will receive extra airdrop rewards and will have access to VIP events such as pre-launch “breeding”, beta gameplay, and much more. TOKEN</p>
+                                    </div>
+                                </b-col>
+                            </b-row>
+                            <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
+                                <b-col
+                                cols="12"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img class="d-block" :style="{width: '500px'}" src="../../public/images/treasure.png" alt="..." />
+                                </b-col>
+                                <b-col 
+                                cols="12"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <div class="ps-5 pe-5">
+                                        <h1 class="text-light title">Meka Token IDO</h1>
+                                        <p class="text-light pt-3 landing-page-sub-desc">TBA We will be holding an IDO community members will be given the chance to “invest” in our game. We believe that small/retail investors are key to having a successful NFT project. Shortly after the IDO, the token will be listed on DEXs, the date and platform is yet to be announced.</p>
+                                    </div>
+                                </b-col>
+                            </b-row>
+                            <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
+                                <b-col
+                                cols="12"
+                                data-aos="fade-right"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <img class="d-block" :style="{width: '500px'}" src="../../public/images/snake.png" alt="..." />
+                                </b-col>
+                                <b-col
+                                cols="12"
+                                data-aos="fade-left"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="500"
+                                >
+                                    <div class="ps-5 pe-5">
+                                        <h1 class="text-light title">Land Sale</h1>
+                                        <p class="text-light pt-3 landing-page-sub-desc">TBA Land plots will be sold to early-bird community members. These NFT properties will include exclusive land items, and other benefits</p>
+                                    </div>
+                                </b-col>
+                            </b-row> 
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            
+            <div class="m-width">
+                <div class="game-players">
+                    <div
+                    data-aos="fade-up-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
+                    >
+                        <img src="../../public/images/player-p1.png" :style="{width: '260px', padding: '10px 0', display: 'block', margin: 'auto'}">
+                    </div>
+                    <div
+                    data-aos="fade-up-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
+                    >
+                        <img src="../../public/images/player-p2.png" :style="{width: '260px', padding: '10px 0', display: 'block', margin: 'auto'}">
+                    </div>
+                    <div
+                    data-aos="fade-up-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
+                    >
+                        <img src="../../public/images/player-p3.png" :style="{width: '260px', padding: '10px 0', display: 'block', margin: 'auto'}">
+                    </div>
+                    <div
+                    data-aos="zoom-in"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
+                    >
+                        <img src="../../public/images/player-mobile.png" :style="{width: '260px', padding: '10px 0', display: 'block', margin: 'auto'}">
+                    </div>
+                    <div
+                    data-aos="fade-up-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
+                    >
+                        <img src="../../public/images/player-p4.png" :style="{width: '260px', padding: '10px 0', display: 'block', margin: 'auto'}">
+                    </div>
+                    <div
+                    data-aos="fade-up-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
+                    >
+                        <img src="../../public/images/player-p5.png" :style="{width: '260px', padding: '10px 0', display: 'block', margin: 'auto'}">
+                    </div>
+                    <div
+                    data-aos="fade-up-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="500"
+                    >
+                        <img src="../../public/images/player-p6.png" :style="{width: '260px', padding: '10px 0', display: 'block', margin: 'auto'}">
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-width">
+                <div class="game-roadmap">
+                    <div class="bg">
+                        <div class="position-relative">
+                            <div class="line-bg1"></div>
+                            <div class="line-bg2"></div>
+                            <div class="line-bg3"></div>
+                            <div class="line-bg4"></div>
+                            <div class="line-bg5"></div>
+                        </div>
+                    </div>
+                    <div class="content pt-5">
+                        <div class="container pt-5">
+                            <h1 class="title text-light text-center">Roadmap</h1>
+                            <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                            <div class="roadmap-content">
+                                
+                                <div :style="{width: '300px', display: 'block', margin: 'auto'}">
+                                    <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 1</span>
+                                    </p>
+                                    <ul>
+                                        <li>Conceptualization of Project</li>
+                                        <li>Define Game Mechanics</li>
+                                        <li>Meka Designs</li>
+                                        <li>Website Launch</li>
+                                        <li>Litepaper Release</li>
+                                        <li>Community Contests & Giveaways</li>
+                                        <li>Game Demo</li>
+                                        <li>Social Media Ads</li>
+                                        <li>Social Media Influencers</li>
+                                        <li>Press Release Articles</li>
+                                    </ul>    
+                                </div>
+
+                                <div :style="{width: '300px', display: 'block', margin: 'auto'}">
+                                    <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 2</span>
+                                    </p>
+                                    <ul>
+                                        <li>Release the Team</li>
+                                        <li>Token Staking</li>
+                                        <li>Marketplace Partnership</li>
+                                        <li>Guild Hall Presale</li>
+                                        <li>Smart Contract Audits</li>
+                                        <li>Meka Uprising Marketplace</li>
+                                        <li>NFT Staking Mechanism</li>
+                                        <li>Genesis Meka Early Assembly (Breeding)</li>
+                                        <li>Genesis Meka Beta Gameplay Access</li>
+                                        <li>Public Beta</li>
+                                        <li>Release of Merch</li>
+                                    </ul>
+                                </div>
+
+                                <div :style="{width: '300px', display: 'block', margin: 'auto'}">
+                                    <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 3</span>
+                                    </p>
+                                    <ul>
+                                        <li>Conceptualization of Project</li>
+                                        <li>Define Game Mechanics</li>
+                                        <li>Meka Designs</li>
+                                        <li>Website Launch</li>
+                                        <li>Litepaper Release</li>
+                                        <li>Community Contests & Giveaways</li>
+                                        <li>Game Demo</li>
+                                        <li>Social Media Ads</li>
+                                        <li>Social Media Influencers</li>
+                                        <li>Press Release Articles</li>
+                                    </ul>
+                                </div>
+
+                                <div :style="{width: '300px', display: 'block', margin: 'auto'}">
+                                    <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 4</span>
+                                    </p>
+                                    <ul>
+                                        <li>NFT Staking Release</li>
+                                        <li>$secondarytoken Launch</li>
+                                        <li>Mobile App Launch</li>
+                                        <li>DAO Establishment</li>
+                                        <li>Addition of New Game Modes</li>
+                                        <li>Release of Guilds</li>
+                                        <li>Release of In-game Scholarshipsles</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-width">
+                <div class="game-integration">
+                    <div class="container pb-5">
+                        <h1 class="title text-light text-center">Tech Integrations</h1>
+                        <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                        <br>
+                        <img src="../../public/images/integration-mobile.png" :style="{width: '400px', display: 'block', 'margin': 'auto'}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
 
     </div>
 </template>
@@ -231,6 +602,14 @@
 
 <style scoped>
 
+.m-width{
+    width: 600px;
+}
+
+.d-width{
+    width: 1519px;
+}
+
 .title{
     font-family: 'Sofia Pro', sans-serif;
     font-size: 40px;
@@ -244,7 +623,7 @@
     background-size: cover;
     position: relative;
     z-index: 0; 
-    width: 100%; 
+    width: 1519px; 
     height: 900px;
 }
 
@@ -257,7 +636,7 @@
 }
 
 .overview{
-    padding: 50px 100px;
+    padding: 50px 0;
 }
 
 .game-features{
@@ -269,7 +648,7 @@
 .game-features .bg{
     position: absolute;
     width: 250%;
-    height: 2100px;
+    height: 2150px;
     background-color: #171617;
     top: 0;
     left: -50px;
@@ -484,5 +863,42 @@
 .bg-4 div p.title-sub{
     font-family: 'Sofia Pro', sans-serif; 
     padding: 20px 330px;
+}
+
+@media only screen and (max-width: 600px){
+    .home-banner {
+        width: 600px; 
+        height: 500px;
+    }
+
+    .home-desc{
+        padding: 0 20px;
+    }
+
+    .game-players{
+        height: 1200px;
+    }
+
+    .game-roadmap{
+        height: 1150px;
+        overflow: hidden;
+    }
+
+    .game-roadmap .roadmap-content{
+        height: 1000px;
+        width: 515px;
+    }
+
+    .game-roadmap .bg{
+        position: absolute;
+        width: 250%;
+        height: 1080px;
+        background-color: #171617;
+        top: 0;
+        left: -50px;
+        transform: rotate(-2deg);
+        z-index: 0;
+        overflow: hidden;
+    }
 }
 </style>
