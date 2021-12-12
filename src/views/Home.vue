@@ -874,7 +874,7 @@
 
 @media only screen and (max-width: 600px){
     html,body{
-        width: 600px;
+        width: 100%;
         overflow: hidden;
     }
 
