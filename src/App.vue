@@ -19,14 +19,6 @@ export default {
   metaInfo() {
         return { 
             title: "Meka Uprising - COLLECTIBLE NFTs",
-            meta: [
-                { property: "og:title", content: "Meka Uprising - COLLECTIBLE NFTs"},
-                { property: "og:url", content: "https://mekauprising.com/"},
-                { property: "og:type", content: "website"},    
-                { property: "og:image", content: "https://sgp1.digitaloceanspaces.com/img.mekuprising/meka-lg-logo.png"},  
-                { property: "og:description", content:  "Epiloge is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work."},  
-                { name: "robots", content: "index,follow"} 
-            ]
         }
     }
 
