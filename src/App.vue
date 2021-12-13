@@ -24,7 +24,7 @@ export default {
                 { property: 'og:title', content: "Meka Uprising - COLLECTIBLE NFTs"},
                 { property: 'og:url', content: 'https://mekauprising.com/'},
                 { property: 'og:type', content: 'website'},    
-                { property: 'og:image', content: '../public/images/meka-lg-logo.png'},    
+                { property: 'og:image', content: 'https://sgp1.digitaloceanspaces.com/img.mekuprising/meka-lg-logo.png'},    
                 { name: 'robots', content: 'index,follow'} 
             ]
         }
