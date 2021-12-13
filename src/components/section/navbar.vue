@@ -27,7 +27,7 @@
           </b-nav-item>
 
           <b-nav-item v-if="!userToken" class="d-none"><button v-b-modal.login class="tab-button button-shadow"><font-awesome-icon icon="user"/> Login</button></b-nav-item>
-          <div class="dropdown position-relative pt-2" v-if="userToken">
+          <div class="dropdown position-relative pt-2" v-if="userToken && user.length > 0">
             <button class="btn btn-secondary dropdown-toggle button-shadow" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="../../../public/images/30743827_2181451222084516_4517157275755872256_n.jpg" class="profile-button"> {{ user.name.split(' ')[0] }}
             </button>
@@ -167,8 +167,12 @@ export default {
     },
     getUserDetails() {
       let token = localStorage.getItem("jwt");
-      let decoded = VueJwtDecode.decode(token);
-      this.user = decoded;
+      if(token){
+        let decoded = VueJwtDecode.decode(token);
+        this.user = decoded;
+      }else{
+        this.user = {}
+      }
     },
     created() {
       this.getUserDetails();
