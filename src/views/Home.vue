@@ -629,6 +629,7 @@
     z-index: 0; 
     width: 1519px; 
     height: 900px;
+    margin: auto;
 }
 
 .home-desc{
@@ -642,6 +643,7 @@
 .overview{
     padding: 50px 0;
     width: 1519px;
+    margin: auto;
 }
 
 .game-features{
