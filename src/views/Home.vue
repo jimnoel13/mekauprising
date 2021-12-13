@@ -925,7 +925,7 @@
 
     .game-roadmap .roadmap-content{
         height: 1000px;
-        width: 515px;
+        width: 100%;
         overflow: hidden;
     }
 

@@ -43,8 +43,7 @@
             <div class="bg-footer-m">
                 <b-container class="ps-5 pe-5 pt-3">
                     <b-row>
-                        <b-col cols="6"></b-col>
-                        <b-col cols="6">
+                        <b-col>
                             <router-link to="/" class="footer-tab pb-3 pt-5 footer-tab-text">Meka Uprising</router-link>
                             <router-link to="/" class="footer-tab pb-3 footer-tab-text">Our Vision</router-link>
                             <router-link to="/" class="footer-tab pb-3 footer-tab-text">Game Features</router-link>
@@ -164,8 +163,8 @@
 
         .brand-icon{
             transition: all 0.3s ease-out;
-            height: 50px;
-            width: 50px;
+            height: 40px;
+            width: 40px;
             margin: 0 7px; 
             padding: 7px; 
             background-color: #070807; 
