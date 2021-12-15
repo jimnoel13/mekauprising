@@ -104,7 +104,7 @@
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500"
                                 >
-                                    <img class="d-block" :style="{width: '747px'}" src="../../public/images/treasure.png" alt="..." />
+                                    <img class="d-block" :style="{width: '747px', 'margin-left': 'auto'}" src="../../public/images/treasure.png" alt="..." />
                                 </b-col>
                             </b-row>
                             <b-row class="div-row mt-3 mb-5" :style="{height: '600px'}">
@@ -609,7 +609,7 @@
 }
 
 .d-width{
-    width: 1519px;
+    width: 100%;
     overflow: hidden;
     margin: auto;
 }
@@ -627,7 +627,7 @@
     background-size: cover;
     position: relative;
     z-index: 0; 
-    width: 1519px; 
+    width: 100%; 
     height: 900px;
     margin: auto;
 }
@@ -642,7 +642,7 @@
 
 .overview{
     padding: 50px 0;
-    width: 1519px;
+    width: 100%;
     margin: auto;
 }
 
@@ -650,7 +650,7 @@
     position: relative;
     overflow: hidden;
     height: 2200px;
-    width: 1519px;
+    width: 100%;
 }
 
 .game-features .bg{
@@ -731,11 +731,11 @@
 
 .game-players{
     height: 600px;
-    width: 1519px;
+    width: 100%;
 }
 
 .game-roadmap{
-    width: 1519px;
+    width: 100%;
     position: relative;
     overflow: hidden;
     height: 1100px;
