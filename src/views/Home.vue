@@ -582,7 +582,10 @@
                         <h1 class="title text-light text-center">Tech Integrations</h1>
                         <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
                         <br>
-                        <img src="../../public/images/integration-mobile.png" :style="{width: '400px', display: 'block', 'margin': 'auto'}">
+                        <div :style="{width: '420px', display: 'block', margin: 'auto'}">
+                            <img src="../../public/images/bscscan.png" :style="{width: '200px', 'vertical-align': 'top'}">
+                            <img src="../../public/images/moralis.png" fill="#FFFFFF" :style="{width: '220px', 'vertical-align': 'top', padding: '20px 20px'}">
+                        </div>
                     </div>
                 </div>
             </div>
