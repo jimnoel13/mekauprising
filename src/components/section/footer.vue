@@ -94,7 +94,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        width: 1519px;
+        width: 100%;
         height: 230px;
         display: block;
         margin: auto;
