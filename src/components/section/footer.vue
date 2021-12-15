@@ -149,6 +149,7 @@
         box-shadow: -4px 4px 5px -1px #B33600, -4px 4px 7px -5px rgba(155,155,155,0.76) inset; 
         -webkit-box-shadow: -4px 4px 5px -1px #B33600, -4px 4px 7px -5px rgba(155,155,155,0.76) inset; 
         -moz-box-shadow: -4px 4px 5px -1px #B33600, -4px 4px 7px -5px rgba(155,155,155,0.76) inset;
+        transform: scale(1.1);
     }
 
     .footer-tab-text-mobile{
