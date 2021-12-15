@@ -911,10 +911,10 @@
         height: 400px;
         overflow: hidden;
     }
-
     .home-banner img{
         height: 100%;
-        width: 100%;
+        width: 120%;
+        left: -10%;
     }
 
 
