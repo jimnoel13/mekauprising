@@ -6,13 +6,12 @@
             <div class="bg-footer-d">
                 <b-container class="ps-5 pe-5 pt-3">
                     <b-row>
-                        <b-col cols="6"></b-col>
-                        <b-col cols="6">
+                        <b-col>
                             <div class="float-end">
-                                <router-link to="/" class="footer-tab">Meka Uprising</router-link>
-                                <router-link to="/" class="footer-tab">Our Vision</router-link>
-                                <router-link to="/" class="footer-tab">Game Features</router-link>
-                                <router-link to="/" class="footer-tab">Contact</router-link>
+                                <router-link to="/" class="footer-tab footer-tab-text-desktop">Meka Uprising</router-link>
+                                <router-link to="/" class="footer-tab footer-tab-text-desktop">Our Vision</router-link>
+                                <router-link to="/" class="footer-tab footer-tab-text-desktop">Game Features</router-link>
+                                <router-link to="/" class="footer-tab footer-tab-text-desktop">Contact</router-link>
                             </div>
                         </b-col>
                     </b-row>
@@ -44,17 +43,17 @@
                 <b-container class="ps-5 pe-5 pt-3">
                     <b-row>
                         <b-col>
-                            <router-link to="/" class="footer-tab pb-3 pt-5 footer-tab-text">Meka Uprising</router-link>
-                            <router-link to="/" class="footer-tab pb-3 footer-tab-text">Our Vision</router-link>
-                            <router-link to="/" class="footer-tab pb-3 footer-tab-text">Game Features</router-link>
-                            <router-link to="/" class="footer-tab pb-3 footer-tab-text">Contact</router-link>
+                            <router-link to="/" class="footer-tab pb-3 pt-5 footer-tab-text-mobile">Meka Uprising</router-link>
+                            <router-link to="/" class="footer-tab pb-3 footer-tab-text-mobile">Our Vision</router-link>
+                            <router-link to="/" class="footer-tab pb-3 footer-tab-text-mobile">Game Features</router-link>
+                            <router-link to="/" class="footer-tab pb-3 footer-tab-text-mobile">Contact</router-link>
                         </b-col>
                     </b-row>
                 </b-container>
                 <br>
                 <br>
                 <br>
-                <b-container class="ps-5 pe-5 pt-5">
+                <b-container class="ps-5 pe-5">
                     <b-row>
                         <b-col>
                             <div class="float-end">
@@ -90,10 +89,7 @@
     }
 
     .bg-footer-d{
-        background: url('../../../public/images/footer-bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: #de4300;
         width: 100%;
         height: 230px;
         display: block;
@@ -101,25 +97,27 @@
     }
 
     .bg-footer-m{
-        background: url('../../../public/images/footer-bg-mobile.jpg');
+        /*background: url('../../../public/images/footer-bg-mobile.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center;*/
+        background-color: #de4300;
         width: 100%;
-        height: 835px;
+        height: 450px;
         display: block;
         margin: auto;
     }
 
     .router-link-active{
         transition: all 0.3s ease-out;
-        color: #bfbfbf;
+        color: #FFFFFF; 
+        text-shadow: -2px 2px 2px #3E3E3E;
         text-decoration: none;
     }
 
     .router-link-active:hover{
         transition: all 0.3s ease;
-        color: #FFFFFF;
+        color: #222222;
     }
 
     .brands:hover{
@@ -134,8 +132,8 @@
 
     .brand-icon{
         transition: all 0.3s ease-out;
-        height: 35px;
-        width: 35px;
+        height: 40px;
+        width: 40px;
         margin: 0 7px; 
         padding: 7px; 
         background-color: #070807; 
@@ -153,10 +151,14 @@
         -moz-box-shadow: -4px 4px 5px -1px #B33600, -4px 4px 7px -5px rgba(155,155,155,0.76) inset;
     }
 
-    .footer-tab-text{
-        font-size: 20px;
+    .footer-tab-text-mobile{
+        font-size: 25px;
         display: block;
         text-align: right;
+    }
+
+    .footer-tab-text-desktop{
+        font-size: 25px;
     }
 
     @media only screen and (max-width: 600px){

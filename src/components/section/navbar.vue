@@ -213,9 +213,11 @@ export default {
     font-family: 'Sofia Pro', sans-serif;
     text-transform: uppercase;
     line-height: 2.9em;
+    text-shadow: -1px 1px 2px #3E3E3E;
   }
 
   .navbar .navbar-nav .button .nav-link {
+    transition: all 0.3s ease-out;
     font-size: 0.8em;
     font-weight: bold;
     position: relative;

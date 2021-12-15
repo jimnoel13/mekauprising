@@ -1,10 +1,11 @@
 <template>
     <div>
         <div class="home-banner">
+            <img src="../../public/images/lineartbanner-sharp.png">
             <div class="home-desc">
                 <p class="banner-title text-light">mekauprising offers <br> to earn within our ecosystem.</p>
-                <p :style="{'text-transform': 'uppercase', 'font-size': '12px', 'font-family': 'Sofia Pro', 'line-height': '20px'}" class="text-light">a player can choose the path in which they want to earn, the more resources players invest<br> within the ecosystemthe greater their potential rewards are.</p>
-                <button class="button-orange">play to earn</button>
+                <p :style="{'text-transform': 'uppercase', 'font-size': '12px', 'font-family': 'Sofia Pro', 'line-height': '20px', 'text-shadow': '-1px 1px 2px #3E3E3E'}" class="text-light">a player can choose the path in which they want to earn, the more resources players invest<br> within the ecosystemthe greater their potential rewards are.</p>
+                <button class="button-orange">play demo</button>
             </div>
         </div>
 
@@ -20,31 +21,32 @@
         <!-- Desktop View -->
         <div class="col-md-12 col-lg-12 d-none d-sm none d-md-block d-lg-block" id="about">
             <div class="overview pb-0">
-                <div
-                data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="500"
-                >
                     <div class="d-width">
                         <h1 class="title text-light text-center">Game Overview</h1>
-                        <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
-                        <br>
-                        <img src="../../public/images/overview-img.png" :style="{height: 'auto', width: '900px', display: 'block', 'margin': 'auto'}">
-                        <div class="container">
-                            <b-row class="div-row mt-3 mb-5" :style="{'height': '220px'}">
-                                <b-col cols="6" :style="{height: '220px'}">
-                                    <img src="../../public/images/overview-pte.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                    <img src="../../public/images/overview-q.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                </b-col>
-                                <b-col cols="6" :style="{height: '220px'}">
-                                    <img src="../../public/images/overview-cl.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                    <img src="../../public/images/overview-wb.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                </b-col>
-                            </b-row>
+                        <div
+                        data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="500"
+                        >
+                            <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                            <br>
+                            <img src="../../public/images/mekaisometric.png" :style="{height: 'auto', width: '900px', display: 'block', 'margin': 'auto'}">
+                            <div class="container">
+                                <b-row class="div-row mt-3 mb-5" :style="{'height': '220px'}">
+                                    <b-col cols="6" :style="{height: '220px'}">
+                                        <img src="../../public/images/overview-pte.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                        <img src="../../public/images/overview-q.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    </b-col>
+                                    <b-col cols="6" :style="{height: '220px'}">
+                                        <img src="../../public/images/overview-cl.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                        <img src="../../public/images/overview-wb.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    </b-col>
+                                </b-row>
+                            </div>
                         </div>
+
                     </div>
-                </div>
             </div>
 
             <div class="d-width">
@@ -69,7 +71,7 @@
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500"
                                 >
-                                    <img class="d-block" :style="{width: '747px'}" src="../../public/images/coin.png" alt="..." />
+                                    <img class="d-block" :style="{width: '747px'}" src="../../public/images/meka-feature.png" alt="..." />
                                 </b-col>
                                 <b-col 
                                 cols="6"
@@ -278,55 +280,55 @@
         <!-- Mobile View -->
         <div class="col-sm-12 d-block d-sm-block d-md-none d-lg-none" id="about" :style="{width: '100%'}">
             <div class="overview pb-0">
-                <div
-                data-aos="fade-up"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"
-                data-aos-duration="500"
-                >
                     <div class="m-width">
                         <h1 class="title text-light text-center">Game Overview</h1>
-                        <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
-                        <br>
-                        <img src="../../public/images/overview-img-mobile.png" :style="{height: 'auto', width: '100%', display: 'block', 'margin': 'auto'}">
-                        <div class="container">
-                            <b-row class="div-row mt-3 mb-5">
-                                <b-col
-                                data-aos="fade-right"
-                                data-aos-offset="300"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="500"
-                                >
-                                    <img src="../../public/images/overview-pte.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                </b-col>
-                                <b-col
-                                data-aos="fade-right"
-                                data-aos-offset="300"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="500"
-                                >
-                                    <img src="../../public/images/overview-q.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                </b-col>
-                                <b-col
-                                data-aos="fade-right"
-                                data-aos-offset="300"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="500"
-                                >
-                                    <img src="../../public/images/overview-cl.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                </b-col>
-                                <b-col
-                                data-aos="fade-right"
-                                data-aos-offset="300"
-                                data-aos-easing="ease-in-sine"
-                                data-aos-duration="500"
-                                >
-                                    <img src="../../public/images/overview-wb.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
-                                </b-col>
-                            </b-row>
+                        <div
+                        data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="500"
+                        >
+                            <img src="../../public/images/ext.png" :style="{width: '20px', display: 'block', 'margin': 'auto'}">
+                            <br>
+                            <img src="../../public/images/overview-img-mobile.png" :style="{height: 'auto', width: '100%', display: 'block', 'margin': 'auto'}">
+                            <div class="container">
+                                <b-row class="div-row mt-3 mb-5">
+                                    <b-col
+                                    data-aos="fade-right"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="500"
+                                    >
+                                        <img src="../../public/images/overview-pte.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    </b-col>
+                                    <b-col
+                                    data-aos="fade-right"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="500"
+                                    >
+                                        <img src="../../public/images/overview-q.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    </b-col>
+                                    <b-col
+                                    data-aos="fade-right"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="500"
+                                    >
+                                        <img src="../../public/images/overview-cl.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    </b-col>
+                                    <b-col
+                                    data-aos="fade-right"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-duration="500"
+                                    >
+                                        <img src="../../public/images/overview-wb.png" :style="{display: 'block', width: '400px', padding: '10px 0'}">
+                                    </b-col>
+                                </b-row>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
 
             <div class="m-width">
@@ -351,7 +353,7 @@
                                 data-aos-easing="ease-in-sine"
                                 data-aos-duration="500"
                                 >
-                                    <img class="d-block" :style="{width: '400px'}" src="../../public/images/coin.png" alt="..." />
+                                    <img class="d-block" :style="{width: '400px'}" src="../../public/images/meka-feature.png" alt="..." />
                                 </b-col>
                                 <b-col 
                                 cols="12"
@@ -606,6 +608,7 @@
     font-size: 40px;
     font-family: 'Sofia Pro';
     line-height: 40px;
+    text-shadow: -2px 2px 2px #3E3E3E;
 }
 
 .d-width{
@@ -621,15 +624,23 @@
 }
 
 .home-banner {
-    background: url('../../public/images/mekauprising-main-banner.png'); 
+    /*background: url('../../public/images/mekauprising-main-banner.png'); 
     background-position: center; 
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: cover;*/
     position: relative;
     z-index: 0; 
     width: 100%; 
     height: 900px;
     margin: auto;
+}
+
+.home-banner img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 .home-desc{
@@ -844,17 +855,13 @@
 }
 
 .game-roadmap .roadmap-content ul{
-    list-style-type: none;
-    padding: 10px 0 0 10px;
+    list-style-type: circle;
+    padding: 10px 0 0 20px;
 }
 
 .game-roadmap .roadmap-content ul li{
     color: white;
     font-size: 12px;
-}
-
-.game-roadmap .roadmap-content ul li:before{
-    content: '- ';
 }
 
 .game-roadmap .progressbar{
@@ -895,9 +902,15 @@
 
     .home-banner {
         width: 100%;
-        height: 500px;
+        height: 400px;
         overflow: hidden;
     }
+
+    .home-banner img{
+        height: 100%;
+        width: 100%;
+    }
+
 
     .home-desc{
         padding: 0 20px;
