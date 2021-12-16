@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Industry Inc';
+    src: local('Industry Inc Inline Stroke'), local('Industry-Inc-Inline-Stroke'),
+        url('IndustryInc-InlineStroke.woff2') format('woff2'),
+        url('IndustryInc-InlineStroke.woff') format('woff'),
+        url('IndustryInc-InlineStroke.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

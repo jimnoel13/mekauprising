@@ -1,10 +1,9 @@
 <template>
     <div>
         <div class="home-banner">
-            <img src="../../public/images/lineartbanner-sharp.png">
             <div class="home-desc">
-                <p class="banner-title text-light">mekauprising offers <br> to earn within our ecosystem.</p>
-                <p :style="{'text-transform': 'uppercase', 'font-size': '12px', 'font-family': 'Sofia Pro', 'line-height': '20px', 'text-shadow': '-1px 1px 2px #3E3E3E'}" class="text-light">a player can choose the path in which they want to earn, the more resources players invest<br> within the ecosystemthe greater their potential rewards are.</p>
+                <p class="banner-title title text-light">mekauprising offers <br> to earn within our ecosystem.</p>
+                <p :style="{'text-transform': 'uppercase', 'font-size': '12px', 'line-height': '20px', 'text-shadow': '-1px 1px 2px #3E3E3E'}" class="text-light">a player can choose the path in which they want to earn, the more resources players invest<br> within the ecosystemthe greater their potential rewards are.</p>
                 <button class="button-orange">play demo</button>
             </div>
         </div>
@@ -22,7 +21,7 @@
         <div class="col-md-12 col-lg-12 d-none d-sm none d-md-block d-lg-block" id="about">
             <div class="overview pb-0">
                     <div class="d-width">
-                        <h1 class="title text-light text-center">Game Overview</h1>
+                        <h1 class="title text-light text-center title">Game Overview</h1>
                         <div
                         data-aos="fade-up"
                         data-aos-offset="300"
@@ -168,7 +167,7 @@
                                 data-aos-duration="500"
                                 >
                                     <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 1</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 1</span>
                                     </p>
                                     <ul>
                                         <li>Conceptualization of Project</li>
@@ -192,7 +191,7 @@
                                 data-aos-duration="500"
                                 >
                                     <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 2</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 2</span>
                                     </p>
                                     <ul>
                                         <li>Release the Team</li>
@@ -217,7 +216,7 @@
                                 data-aos-duration="500"
                                 >
                                     <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 3</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 3</span>
                                     </p>
                                     <ul>
                                         <li>Conceptualization of Project</li>
@@ -241,7 +240,7 @@
                                 data-aos-duration="500"
                                 >
                                     <p :style="{background: '#90350e', height: '20px', width: '250px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 4</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 4</span>
                                     </p>
                                     <ul>
                                         <li>NFT Staking Release</li>
@@ -502,7 +501,7 @@
                                 
                                 <div :style="{width: '300px', display: 'block', margin: 'auto'}">
                                     <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 1</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 1</span>
                                     </p>
                                     <ul>
                                         <li>Conceptualization of Project</li>
@@ -520,7 +519,7 @@
 
                                 <div :style="{width: '300px', display: 'block', margin: 'auto'}">
                                     <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 2</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 2</span>
                                     </p>
                                     <ul>
                                         <li>Release the Team</li>
@@ -539,7 +538,7 @@
 
                                 <div :style="{width: '300px', display: 'block', margin: 'auto'}">
                                     <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 3</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 3</span>
                                     </p>
                                     <ul>
                                         <li>Conceptualization of Project</li>
@@ -557,7 +556,7 @@
 
                                 <div :style="{width: '300px', display: 'block', margin: 'auto'}">
                                     <p :style="{background: '#90350e', height: '20px', width: '300px', 'margin': '0', position: 'relative'}">
-                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase', 'font-family': 'Sofia Pro'}" class="text-light">Phase 4</span>
+                                        <span :style="{background: '#171617', 'position': 'absolute', top: '0', left: '5%', 'line-height': '20px', 'padding': '0 5px', 'text-transform': 'uppercase'}" class="text-light">Phase 4</span>
                                     </p>
                                     <ul>
                                         <li>NFT Staking Release</li>
@@ -612,7 +611,6 @@
 .banner-title{
     text-transform: uppercase;
     font-size: 40px;
-    font-family: 'Sofia Pro';
     line-height: 40px;
     text-shadow: -2px 2px 2px #3E3E3E;
 }
@@ -624,16 +622,16 @@
 }
 
 .title{
-    font-family: 'Sofia Pro', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
 }
 
 .home-banner {
-    /*background: url('../../public/images/mekauprising-main-banner.png'); 
+    background: url('../../public/images/lineartbanner-sharp.png'); 
     background-position: center; 
     background-repeat: no-repeat; 
-    background-size: cover;*/
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     z-index: 0; 
     width: 100%; 
@@ -879,12 +877,10 @@
 }
 
 .bg-4 div h1.title{
-    font-family: 'Sofia Pro', sans-serif; 
     padding-top: 50px; font-weight: bold;
 }
 
 .bg-4 div p.title-sub{
-    font-family: 'Sofia Pro', sans-serif; 
     padding: 20px 330px;
 }
 
@@ -894,10 +890,23 @@
         overflow: hidden;
     }
 
+    .home-banner {
+        background: url('../../public/images/lineartbanner-sharp.png'); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        z-index: 0; 
+        width: 100%; 
+        height: 900px;
+        margin: auto;
+    }
+    
+
     .banner-title{
         text-transform: uppercase;
         font-size: 30px;
-        font-family: 'Sofia Pro';
         line-height: 30px;
     }
 

@@ -53,15 +53,15 @@
                         <p class="m-0 text-start">Password</p>
                         <input type="password" name="password" class="form-control w-100" v-model="login.password">
                       </div>
-                      <b-button type="submit" variant="outline-dark w-100 mt-3 text-sofia">Login</b-button>
+                      <b-button type="submit" variant="outline-dark w-100 mt-3">Login</b-button>
                     </form>
                   </div>
                   <b-row class="pt-3">
                     <b-col class="pe-1">
-                      <b-button variant="outline-danger w-100 mt-3 text-sofia">Login as <font-awesome-icon class="icon alt" :icon="['fab', 'google']"/></b-button>
+                      <b-button variant="outline-danger w-100 mt-3">Login as <font-awesome-icon class="icon alt" :icon="['fab', 'google']"/></b-button>
                     </b-col>
                     <b-col class="ps-1">
-                      <b-button variant="outline-primary w-100 mt-3 text-sofia">Login as <font-awesome-icon class="icon alt" :icon="['fab', 'facebook']"/></b-button>
+                      <b-button variant="outline-primary w-100 mt-3">Login as <font-awesome-icon class="icon alt" :icon="['fab', 'facebook']"/></b-button>
                     </b-col>
                   </b-row>
                   <p class="pt-2 text-start">Dont have an account? click <router-link to="/" class="normallink">here</router-link></p>
@@ -77,8 +77,8 @@
                     }"
                   > 
                     <div :style="{'padding-top': '140px'}">
-                      <h3 class="text-sofia text-light" :style="{'-webkit-text-stroke-width': '0.5px', '-webkit-text-stroke-color': 'black', 'font-weight': 'bold'}">Meka Uprising</h3>
-                      <p class="text-sofia text-light" :style="{'-webkit-text-stroke-width': '0.5px', '-webkit-text-stroke-color': 'black', 'font-weight': 'bold'}">An open-world RPG adventure game built on the Ethereum Blockchain. Journey across a vast and varied landscape on your quest to hunt and capture deity-like creatures called Illuvials. Discover the cause of the cataclysm that shattered this land.</p>
+                      <h3 class="text-light" :style="{'-webkit-text-stroke-width': '0.5px', '-webkit-text-stroke-color': 'black', 'font-weight': 'bold'}">Meka Uprising</h3>
+                      <p class="text-light" :style="{'-webkit-text-stroke-width': '0.5px', '-webkit-text-stroke-color': 'black', 'font-weight': 'bold'}">An open-world RPG adventure game built on the Ethereum Blockchain. Journey across a vast and varied landscape on your quest to hunt and capture deity-like creatures called Illuvials. Discover the cause of the cataclysm that shattered this land.</p>
                     </div>
                   </div>
                 </b-col>
@@ -191,7 +191,6 @@ export default {
     color: white;
     border: 2px solid white;
     background: transparent;
-    font-family: 'Sofia Pro', sans-serif;
     text-transform: uppercase;
     font-size: 0.8em;
     margin-top: 2px;
@@ -210,7 +209,6 @@ export default {
     font-weight: bold;
     position: relative;
     color: white;
-    font-family: 'Sofia Pro', sans-serif;
     text-transform: uppercase;
     line-height: 2.9em;
     text-shadow: -1px 1px 2px #3E3E3E;

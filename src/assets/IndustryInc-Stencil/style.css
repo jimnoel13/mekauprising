@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Industry Inc';
+    src: local('Industry Inc Stencil'), local('Industry-Inc-Stencil'),
+        url('IndustryInc-Stencil.woff2') format('woff2'),
+        url('IndustryInc-Stencil.woff') format('woff'),
+        url('IndustryInc-Stencil.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

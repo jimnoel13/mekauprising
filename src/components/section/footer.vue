@@ -33,7 +33,7 @@
                 </b-container>
             </div>
             <b-container class="pt-3">
-                <p class="text-center sofia text-light">&copy; {{ new Date().getFullYear() }}, All rights reserved</p>
+                <p class="text-center text-light">&copy; {{ new Date().getFullYear() }}, All rights reserved</p>
             </b-container>    
         </div>
 
@@ -69,7 +69,7 @@
                 </b-container>
             </div>
             <b-container class="pt-3 ">
-                <p class="text-center sofia text-light">&copy; {{ new Date().getFullYear() }}, All rights reserved</p>
+                <p class="text-center text-light">&copy; {{ new Date().getFullYear() }}, All rights reserved</p>
             </b-container>    
         </div>
 
@@ -84,7 +84,6 @@
 <style scoped>
     .footer-tab{
         padding: 0 12px;
-        font-family: 'Sofia Pro', sans-serif;
         text-transform: uppercase;
     }
 
