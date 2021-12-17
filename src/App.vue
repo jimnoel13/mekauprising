@@ -26,8 +26,6 @@ export default {
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-  @import url('http://fonts.cdnfonts.com/css/sofia-pro');
 
   html, body{
     padding: 0;

@@ -7,12 +7,12 @@
         <div class="container pt-5 ps-5 pe-5 col-md-12 col-lg-12 d-none d-sm none d-md-block d-lg-block">
             <div class="col ps-5 pe-5">
                 <div class="col" :style="{padding: '0 60px'}">
-                    <h1 class="text-sofia text-light" :style="{'text-align': 'left'}">World Setting</h1>
-                    <p class="text-sofia text-light pt-3" :style="{'text-align': 'left'}">In the end, the Doomsday clock never got to strike midnight. It was Mother Nature that unleashed her wrath on us and our technology when it was too late to reverse our mistakes. The New Humans, as they would like to call themselves, banded together to salvage whatever was left of the Earth. They headed for Proxima b - the only guaranteed habitable planet we know - in Alpha Centauri, 4.24 light years away from Earth. They rid themselves of all the radioactive weapons that could destroy their new home, but kept the humanity that was destined to destroy their own kind. World War III was already set in motion, and the only trigger was the landing of the spaceship. The battle for land started as soon as the New Humans set foot on the surface of Titan.</p>
+                    <h1 class="text-light" :style="{'text-align': 'left'}">World Setting</h1>
+                    <p class="text-light pt-3" :style="{'text-align': 'left'}">In the end, the Doomsday clock never got to strike midnight. It was Mother Nature that unleashed her wrath on us and our technology when it was too late to reverse our mistakes. The New Humans, as they would like to call themselves, banded together to salvage whatever was left of the Earth. They headed for Proxima b - the only guaranteed habitable planet we know - in Alpha Centauri, 4.24 light years away from Earth. They rid themselves of all the radioactive weapons that could destroy their new home, but kept the humanity that was destined to destroy their own kind. World War III was already set in motion, and the only trigger was the landing of the spaceship. The battle for land started as soon as the New Humans set foot on the surface of Titan.</p>
                 </div>
                 <div class="col" :style="{padding: '0 60px'}">
-                    <h1 class="text-sofia text-light" :style="{'text-align': 'left'}">Nations</h1>
-                    <p class="text-sofia text-light pt-3" :style="{'text-align': 'left'}">The New Humans soon divided themselves into primitive nations, drawing borders everywhere to claim the territories as their own.</p>
+                    <h1 class="text-light" :style="{'text-align': 'left'}">Nations</h1>
+                    <p class="text-light pt-3" :style="{'text-align': 'left'}">The New Humans soon divided themselves into primitive nations, drawing borders everywhere to claim the territories as their own.</p>
                     <div
                         :style="{width: 'unset', display: 'flex', 'flex-flow': 'column wrap', height: '700px', 'margin-top': '16px'}">
                         <div 
@@ -25,7 +25,7 @@
                                 <p class="card-text"> 
                                     <span class="fw-bold fs-5">{{ nation.title }} </span>
                                     <br> 
-                                    <span class="text-sofia" style="font-size: 12px;"> {{ nation.content }} </span>
+                                    <span style="font-size: 12px;"> {{ nation.content }} </span>
                                 </p>
                             </div>
                         </div>
@@ -33,8 +33,8 @@
                 </div>
                 <hr style="margin: 0;">
                 <div class="col" :style="{padding: '0 60px'}">
-                    <h1 class="text-sofia text-light" :style="{'text-align': 'left'}">Mekas</h1>
-                    <p class="text-sofia text-light pt-3" :style="{'text-align': 'left'}">In an attempt to create weapons with the least amount of biohazard, they turned to experimenting on animals. After years of genetic engineering, they managed to create Mekas - abominations that are half flesh, half metal. The Mekas were the driving force of the battle for land and power among the nations. Of course, that was before the Chimeras appeared.<br>There are 5 types of Mekas in total, each belonging to a nation and best suited for its home terrain.</p>
+                    <h1 class="text-light" :style="{'text-align': 'left'}">Mekas</h1>
+                    <p class="text-light pt-3" :style="{'text-align': 'left'}">In an attempt to create weapons with the least amount of biohazard, they turned to experimenting on animals. After years of genetic engineering, they managed to create Mekas - abominations that are half flesh, half metal. The Mekas were the driving force of the battle for land and power among the nations. Of course, that was before the Chimeras appeared.<br>There are 5 types of Mekas in total, each belonging to a nation and best suited for its home terrain.</p>
                     <div
                         :style="{width: 'unset', display: 'flex', 'flex-flow': 'column wrap', height: '1350px', 'margin-top': '16px'}">
                         <div 
@@ -47,7 +47,7 @@
                                 <p class="card-text"> 
                                     <span class="fw-bold fs-5">{{ meka.title }} </span>
                                     <br> 
-                                    <span class="text-sofia" style="font-size: 12px;"> {{ meka.content }} </span>
+                                    <span style="font-size: 12px;"> {{ meka.content }} </span>
                                 </p>
                             </div>
                         </div>
@@ -60,13 +60,13 @@
         <!-- Mobile View -->
         <div class="container pt-5 ps-5 pe-5 pb-5 col-sm-12 d-block d-sm-block d-md-none d-lg-none">
             <div class="col">
-                <h1 class="text-sofia text-light" :style="{'text-align': 'left'}">World Setting</h1>
-                <p class="text-sofia text-light pt-3" :style="{'text-align': 'left'}">In the end, the Doomsday clock never got to strike midnight. It was Mother Nature that unleashed her wrath on us and our technology when it was too late to reverse our mistakes. The New Humans, as they would like to call themselves, banded together to salvage whatever was left of the Earth. They headed for Proxima b - the only guaranteed habitable planet we know - in Alpha Centauri, 4.24 light years away from Earth. They rid themselves of all the radioactive weapons that could destroy their new home, but kept the humanity that was destined to destroy their own kind. World War III was already set in motion, and the only trigger was the landing of the spaceship. The battle for land started as soon as the New Humans set foot on the surface of Titan.</p>
+                <h1 class="text-light" :style="{'text-align': 'left'}">World Setting</h1>
+                <p class="text-light pt-3" :style="{'text-align': 'left'}">In the end, the Doomsday clock never got to strike midnight. It was Mother Nature that unleashed her wrath on us and our technology when it was too late to reverse our mistakes. The New Humans, as they would like to call themselves, banded together to salvage whatever was left of the Earth. They headed for Proxima b - the only guaranteed habitable planet we know - in Alpha Centauri, 4.24 light years away from Earth. They rid themselves of all the radioactive weapons that could destroy their new home, but kept the humanity that was destined to destroy their own kind. World War III was already set in motion, and the only trigger was the landing of the spaceship. The battle for land started as soon as the New Humans set foot on the surface of Titan.</p>
             </div>
             <hr :style="{'border-top': '2px solid white'}">
             <div class="col">
-                <h1 class="text-sofia text-light" :style="{'text-align': 'left'}">Nations</h1>
-                <p class="text-sofia text-light pt-3" :style="{'text-align': 'left'}">The New Humans soon divided themselves into primitive nations, drawing borders everywhere to claim the territories as their own.</p>
+                <h1 class="text-light" :style="{'text-align': 'left'}">Nations</h1>
+                <p class="text-light pt-3" :style="{'text-align': 'left'}">The New Humans soon divided themselves into primitive nations, drawing borders everywhere to claim the territories as their own.</p>
                 <div 
                     class="card bg-dark text-white mb-3 w-100" 
                     style="width: 18rem;"
@@ -77,15 +77,15 @@
                         <p class="card-text"> 
                             <span class="fw-bold fs-5">{{ nation.title }} </span>
                             <br> 
-                            <span class="text-sofia" style="font-size: 12px;"> {{ nation.content }} </span>
+                            <span style="font-size: 12px;"> {{ nation.content }} </span>
                         </p>
                     </div>
                 </div>
             </div>
             <hr style="margin: 0;">
             <div class="col">
-                <h1 class="text-sofia text-light" :style="{'text-align': 'left'}">Mekas</h1>
-                <p class="text-sofia text-light pt-3" :style="{'text-align': 'left'}">In an attempt to create weapons with the least amount of biohazard, they turned to experimenting on animals. After years of genetic engineering, they managed to create Mekas - abominations that are half flesh, half metal. The Mekas were the driving force of the battle for land and power among the nations. Of course, that was before the Chimeras appeared.<br>There are 5 types of Mekas in total, each belonging to a nation and best suited for its home terrain.</p>
+                <h1 class="text-light" :style="{'text-align': 'left'}">Mekas</h1>
+                <p class="text-light pt-3" :style="{'text-align': 'left'}">In an attempt to create weapons with the least amount of biohazard, they turned to experimenting on animals. After years of genetic engineering, they managed to create Mekas - abominations that are half flesh, half metal. The Mekas were the driving force of the battle for land and power among the nations. Of course, that was before the Chimeras appeared.<br>There are 5 types of Mekas in total, each belonging to a nation and best suited for its home terrain.</p>
                 <div 
                     class="card bg-dark text-white mb-3 w-100" 
                     style="width: 18rem;"
@@ -96,7 +96,7 @@
                         <p class="card-text"> 
                             <span class="fw-bold fs-5">{{ meka.title }} </span>
                             <br> 
-                            <span class="text-sofia" style="font-size: 12px;"> {{ meka.content }} </span>
+                            <span style="font-size: 12px;"> {{ meka.content }} </span>
                         </p>
                     </div>
                 </div>
