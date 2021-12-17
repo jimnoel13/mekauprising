@@ -13,13 +13,13 @@
           <b-nav-item class="tabs"><router-link to="/story">Game Features</router-link></b-nav-item>
           <b-nav-item class="tabs"><router-link to="/story">Contact</router-link></b-nav-item>
 
-          <!-- <b-nav-item class="button" v-if="!currentUser"><button @click="moralisLogin" class="button-orange">Connect Wallet</button></b-nav-item> -->
+          <b-nav-item class="button" v-if="!currentUser"><button @click="moralisLogin" class="button-orange">Connect Wallet</button></b-nav-item>
           <!-- Moralis -->
           <b-nav-item>
-            <button v-if="!currentUser" @click="moralisLogin" class="metamask-border mt-1 position-relative login">
+            <!-- <button v-if="!currentUser" @click="moralisLogin" class="metamask-border mt-1 position-relative login">
               <img src="../../../public/images/metamask.svg" :style="{height: '20px', width: '20px'}">
               <span class="status offline">●</span>
-            </button>
+            </button> -->
             <button v-if="currentUser" @click="moralisLogout" class="metamask-border mt-1 position-relative logout">
               <img src="../../../public/images/metamask.svg" :style="{height: '20px', width: '20px'}">
               <span class="status online">●</span>
