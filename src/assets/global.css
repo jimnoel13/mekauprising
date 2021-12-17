@@ -16,6 +16,7 @@
 html, body{
     background: #222222;
     font-family: 'IndustryInc-InlineStroke';
+    font-weight: bold;
 }
 
 .title{
@@ -39,6 +40,7 @@ html, body{
     text-transform: uppercase;
     font-size: 0.8em;
     border: none;
+    font-weight: bold;
 }
 
 .button-orange:hover{

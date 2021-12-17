@@ -12,79 +12,19 @@
           <b-nav-item class="tabs" href="/#about">Our Vision</b-nav-item>
           <b-nav-item class="tabs"><router-link to="/story">Game Features</router-link></b-nav-item>
           <b-nav-item class="tabs"><router-link to="/story">Contact</router-link></b-nav-item>
-          <b-nav-item class="button"><button @click="moralisLogin" class="button-orange">Connect Wallet</button></b-nav-item>
 
+          <!-- <b-nav-item class="button" v-if="!currentUser"><button @click="moralisLogin" class="button-orange">Connect Wallet</button></b-nav-item> -->
           <!-- Moralis -->
-          <b-nav-item v-if="userToken">
-            <button v-if="!moralisToken" @click="moralisLogin" class="metamask-border mt-1 position-relative login">
+          <b-nav-item>
+            <button v-if="!currentUser" @click="moralisLogin" class="metamask-border mt-1 position-relative login">
               <img src="../../../public/images/metamask.svg" :style="{height: '20px', width: '20px'}">
               <span class="status offline">●</span>
             </button>
-            <button v-if="moralisToken" @click="moralisLogout" class="metamask-border mt-1 position-relative logout">
+            <button v-if="currentUser" @click="moralisLogout" class="metamask-border mt-1 position-relative logout">
               <img src="../../../public/images/metamask.svg" :style="{height: '20px', width: '20px'}">
               <span class="status online">●</span>
             </button>
           </b-nav-item>
-
-          <b-nav-item v-if="!userToken" class="d-none"><button v-b-modal.login class="tab-button button-shadow"><font-awesome-icon icon="user"/> Login</button></b-nav-item>
-          <div class="dropdown position-relative pt-2" v-if="userToken && user.length > 0">
-            <button class="btn btn-secondary dropdown-toggle button-shadow" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../../../public/images/30743827_2181451222084516_4517157275755872256_n.jpg" class="profile-button"> {{ user.name.split(' ')[0] }}
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-              <li><router-link class="dropdown-item text-center" to="/profile"><font-awesome-icon icon="user"/> Profile</router-link></li>
-              <li><router-link class="dropdown-item text-center" to="/game"><font-awesome-icon icon="gamepad"/> play</router-link></li>
-              <li><a class="dropdown-item text-center" href="javascript:void(0)" @click="logUserOut"><font-awesome-icon icon="user"/> Logout</a></li>
-            </ul>
-          </div>
-
-          <b-modal id="login" v-if="!userToken" size="lg" hide-footer hide-header centered body-class="p-0">
-            <div class="d-block text-center">
-              <b-row>
-                <b-col cols="6" class="ps-4">
-                  <div :style="{'padding-top': '50px'}">
-                    <h3>Login</h3>
-                    <form @submit.prevent="loginUser">
-                      <div class="form-group">
-                        <p class="m-0 text-start">Email</p>
-                        <input type="email" name="email" class="form-control w-100" v-model="login.email">
-                      </div>
-                      <div class="form-group">
-                        <p class="m-0 text-start">Password</p>
-                        <input type="password" name="password" class="form-control w-100" v-model="login.password">
-                      </div>
-                      <b-button type="submit" variant="outline-dark w-100 mt-3">Login</b-button>
-                    </form>
-                  </div>
-                  <b-row class="pt-3">
-                    <b-col class="pe-1">
-                      <b-button variant="outline-danger w-100 mt-3">Login as <font-awesome-icon class="icon alt" :icon="['fab', 'google']"/></b-button>
-                    </b-col>
-                    <b-col class="ps-1">
-                      <b-button variant="outline-primary w-100 mt-3">Login as <font-awesome-icon class="icon alt" :icon="['fab', 'facebook']"/></b-button>
-                    </b-col>
-                  </b-row>
-                  <p class="pt-2 text-start">Dont have an account? click <router-link to="/" class="normallink">here</router-link></p>
-                </b-col>
-                <b-col cols="6" class="ps-0">
-                  <div 
-                    :style="{
-                      'background': 'url(\'https://assets.website-files.com/60ef399b992671a8275e6cff/610d793938c82b5278a4267a_0n1-bg.png\')',
-                      'height': '500px',
-                      'background-position': 'center',
-                      'background-repeat': 'no-repeat',
-                      'background-size': 'cover'
-                    }"
-                  > 
-                    <div :style="{'padding-top': '140px'}">
-                      <h3 class="text-light" :style="{'-webkit-text-stroke-width': '0.5px', '-webkit-text-stroke-color': 'black', 'font-weight': 'bold'}">Meka Uprising</h3>
-                      <p class="text-light" :style="{'-webkit-text-stroke-width': '0.5px', '-webkit-text-stroke-color': 'black', 'font-weight': 'bold'}">An open-world RPG adventure game built on the Ethereum Blockchain. Journey across a vast and varied landscape on your quest to hunt and capture deity-like creatures called Illuvials. Discover the cause of the cataclysm that shattered this land.</p>
-                    </div>
-                  </div>
-                </b-col>
-              </b-row>
-            </div>
-          </b-modal>
 
         </b-navbar-nav>
       </b-collapse>
@@ -94,8 +34,6 @@
 
 <script>
 import Moralis from 'moralis'
-import swal from 'sweetalert'
-import VueJwtDecode from "vue-jwt-decode";
 
 export default {
   name: 'Navigation',
@@ -103,21 +41,13 @@ export default {
   data: () => {
       return {
           currentUser: null,
-          login: {
-            email: "",
-            password: ""
-          },
           user:{},
-          userToken: null,
           moralisToken: null
       }
   },
   beforeMount() {
       this.currentUser = Moralis.User.current();
-      this.userToken = localStorage.getItem("jwt");
       this.moralisToken = localStorage.getItem("moralis")
-
-      this.created();
   },
   methods: {
     async moralisLogin() {
@@ -138,44 +68,6 @@ export default {
         await Moralis.User.logOut();
         localStorage.removeItem("moralis");
         location.reload();
-    },
-    async loginUser() {
-      try {
-        let response = await this.$http.post(process.env.VUE_APP_API_URL+"/user/login", this.login);
-        let token = response.data.token;
-        localStorage.setItem("jwt", token);
-        if (token) {
-          this.created();
-          location.reload();
-          // this.$router.push("/");
-        }
-      } catch (err) {
-        swal("Error", "Something Went Wrong", "error");
-        console.log(err.response);
-      }
-    },
-    async logUserOut() {
-      // User Logout
-      localStorage.removeItem("jwt");
-
-      // Moralis Logout
-      await Moralis.User.logOut();
-      localStorage.removeItem("moralis");
-
-      location.reload();
-      // this.$router.push("/");
-    },
-    getUserDetails() {
-      let token = localStorage.getItem("jwt");
-      if(token){
-        let decoded = VueJwtDecode.decode(token);
-        this.user = decoded;
-      }else{
-        this.user = {}
-      }
-    },
-    created() {
-      this.getUserDetails();
     }
   }
 }
