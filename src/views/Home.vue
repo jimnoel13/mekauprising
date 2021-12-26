@@ -4,7 +4,7 @@
             <div class="home-desc">
                 <p class="banner-title title text-light">mekauprising offers <br> to earn within our ecosystem.</p>
                 <p :style="{'text-transform': 'uppercase', 'font-size': '12px', 'line-height': '20px', 'text-shadow': '-1px 1px 2px #3E3E3E'}" class="text-light">a player can choose the path in which they want to earn, the more resources players invest<br> within the ecosystemthe greater their potential rewards are.</p>
-                <button class="button-orange">play demo</button>
+                <a to="http://localhost:8080/gamedemo/index.html" class="button-orange">play demo</a>
             </div>
         </div>
 

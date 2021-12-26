@@ -40,6 +40,7 @@ html, body{
     font-size: 0.8em;
     border: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .button-orange:hover{
@@ -47,6 +48,8 @@ html, body{
     box-shadow: -4px 4px 5px -3px rgba(0,0,0,0.58);
     -webkit-box-shadow: -4px 4px 5px -3px rgba(0,0,0,0.58);
     -moz-box-shadow: -4px 4px 5px -3px rgba(0,0,0,0.58);
+    color: white;
+    cursor: pointer;
 }
 
 .button-solid{
