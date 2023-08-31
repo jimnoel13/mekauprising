@@ -1,7 +1,7 @@
 <template>
   <div :style="{position: 'relative'}">
     <b-navbar toggleable="lg" class="position-absolute text-light nav-responsive" :style="{top: '0', left: '0', width: '100%', 'z-index': '8'}">
-      <b-navbar-brand href="#"><img src="./../../public/images/nav-logo.png" :style="{height: '90px', width: '120px'}"></b-navbar-brand>
+      <b-navbar-brand href="#"><img src="../../public/images/nav-logo.png" :style="{height: '90px', width: '120px'}"></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -33,43 +33,10 @@
 </template>
 
 <script>
-import Moralis from 'moralis'
 
 export default {
   name: 'Navigation',
   components: {},
-  data: () => {
-      return {
-          currentUser: null,
-          user:{},
-          moralisToken: null
-      }
-  },
-  beforeMount() {
-      this.currentUser = Moralis.User.current();
-      this.moralisToken = localStorage.getItem("moralis")
-  },
-  methods: {
-    async moralisLogin() {
-        let user = Moralis.User.current();
-        if (!user) {
-          user = await Moralis.authenticate({ signingMessage: "Log in using Moralis" })
-            .then(function (user) {
-              console.log("logged in user:", user);
-              localStorage.setItem("moralis", user.get("ethAddress"))
-              location.reload();
-            })
-            .catch(function (error) {
-              console.log(error);
-            });
-        }
-    },
-    async moralisLogout() {
-        await Moralis.User.logOut();
-        localStorage.removeItem("moralis");
-        location.reload();
-    }
-  }
 }
 </script>
 
