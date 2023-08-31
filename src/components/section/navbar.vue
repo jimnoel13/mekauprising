@@ -1,7 +1,7 @@
 <template>
   <div :style="{position: 'relative'}">
     <b-navbar toggleable="lg" class="position-absolute text-light nav-responsive" :style="{top: '0', left: '0', width: '100%', 'z-index': '8'}">
-      <b-navbar-brand href="#"><img src="../../../public/images/nav-logo.png" :style="{height: '90px', width: '120px'}"></b-navbar-brand>
+      <b-navbar-brand href="#"><img src="./../../public/images/nav-logo.png" :style="{height: '90px', width: '120px'}"></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
