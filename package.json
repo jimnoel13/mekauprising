@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "vue-cli-service build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.36",
@@ -80,13 +80,13 @@
   "main": "babel.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jimnoel13/mekauprising-vue.git"
+    "url": "git+https://github.com/jimnoel13/mekauprising.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jimnoel13/mekauprising-vue/issues"
+    "url": "https://github.com/jimnoel13/mekauprising/issues"
   },
-  "homepage": "https://github.com/jimnoel13/mekauprising-vue"
+  "homepage": "https://jimnoel13.github.io/mekauprising"
 }
